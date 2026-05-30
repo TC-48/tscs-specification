@@ -142,3 +142,38 @@ Control codes occupy the first few positions in the character set. They are used
 | 011201 | 127     | Degree Sign          |
 | 011202 | 128     | Plus-Minus Sign      |
 | 011210 | 129     | Not Equal To         |
+
+### Math Symbols
+| Code   | Decimal | Name                     |
+|:-------|:--------|:-------------------------|
+| 011211 | 130     | Multiplication Sign      |
+| 011212 | 131     | Division Sign            |
+| 011220 | 132     | Less-Than or Equal To    |
+| 011221 | 133     | Greater-Than or Equal To |
+| 011222 | 134     | Approximately Equal To   |
+| 012000 | 135     | Identical To             |
+| 012001 | 136     | Square Root              |
+| 012002 | 137     | Infinity                 |
+| 012010 | 138     | Integral                 |
+| 012011 | 139     | Partial Differential     |
+| 012012 | 140     | N-ary Summation          |
+| 012020 | 141     | N-ary Product            |
+| 012021 | 142     | Increment                |
+| 012022 | 143     | Greek Small Letter Pi    |
+| 012100 | 144     | Logical AND              |
+| 012101 | 145     | Logical OR               |
+| 012102 | 146     | Logical NOT              |
+| 012110 | 147     | For All                  |
+| 012111 | 148     | There Exists             |
+| 012112 | 149     | Empty Set                |
+| 012120 | 150     | Element Of               |
+| 012121 | 151     | Not An Element Of        |
+| 012122 | 152     | Intersection             |
+| 012200 | 153     | Union                    |
+| 012201 | 154     | Subset Of                |
+| 012202 | 155     | Subset Of Or Equal To    |
+| 012210 | 156     | Therefore                |
+| 012211 | 157     | Because                  |
+| 012212 | 158     | Proportional To          |
+| 012220 | 159     | Much Less-Than           |
+| 012221 | 160     | Much Greater-Than        |
