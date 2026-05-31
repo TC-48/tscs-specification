@@ -8,7 +8,10 @@ import sys
 import os
 
 def ternary_to_decimal(s):
-    return int(s, 3)
+    try:
+        return int(s, 3)
+    except ValueError:
+        return -1
 
 def get_control_glyph(code_point):
     # Mapping for Unicode Control Pictures (U+2400 block)
@@ -34,15 +37,62 @@ def extract_glyph(raw_glyph):
         return s[2:-2].strip() or ' ' # Double backticks often used for single backtick or space
     if s.startswith('`') and s.endswith('`'):
         content = s[1:-1]
-        # Special case: if content is empty, it was `` ` `` which became ` ` after strip or something?
-        # Actually ` ` is space.
         return content
     return s
+
+def validate_character_codes(file_path):
+    print(f"Validating {file_path}...")
+    errors = []
+    data = {} # tscs_code -> {decimal, name}
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    used_decimals = {}
+
+    for i, line in enumerate(lines):
+        line = line.strip()
+        if not line.startswith('|') or 'Code' in line or ':---' in line:
+            continue
+        
+        parts = parse_markdown_row(line)
+        if len(parts) < 4:
+            continue
+            
+        tscs_code = parts[1]
+        decimal_val_str = parts[2]
+        
+        # In character-codes.md:
+        # Control: | Code | Decimal | Mnemonic | Name | Description | (len 6)
+        # Graphic: | Code | Decimal | Name | (len 4)
+        if len(parts) >= 6:
+            name = parts[4]
+        else:
+            name = parts[3]
+
+        try:
+            decimal_val = int(decimal_val_str)
+            expected_decimal = ternary_to_decimal(tscs_code)
+            if expected_decimal != decimal_val:
+                errors.append(f"Line {i+1}: TSCS Code {tscs_code} (ternary) should be {expected_decimal}, but found {decimal_val}")
+            
+            if tscs_code in data:
+                errors.append(f"Line {i+1}: Duplicate TSCS Code {tscs_code}")
+            if decimal_val in used_decimals:
+                errors.append(f"Line {i+1}: Duplicate Decimal value {decimal_val} (previously at line {used_decimals[decimal_val]})")
+            
+            used_decimals[decimal_val] = i + 1
+            data[tscs_code] = {'decimal': decimal_val, 'name': name}
+
+        except ValueError:
+             errors.append(f"Line {i+1}: Invalid TSCS Code or Decimal format: {tscs_code}, {decimal_val_str}")
+             continue
+    
+    return errors, data
 
 def validate_ascii_mapping(file_path):
     print(f"Validating {file_path}...")
     errors = []
-    data = {} # tscs_code -> {decimal, glyph, hex}
+    data = {} # tscs_code -> {decimal, name, glyph, hex}
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
@@ -59,6 +109,7 @@ def validate_ascii_mapping(file_path):
         
         tscs_code = parts[1]
         decimal_val_str = parts[2]
+        name = parts[3]
         ascii_glyph = extract_glyph(parts[4])
         ascii_hex = parts[5].replace('`', '').strip()
         
@@ -75,7 +126,7 @@ def validate_ascii_mapping(file_path):
                 errors.append(f"Line {i+1}: Duplicate Decimal value {decimal_val} (previously at line {used_decimals[decimal_val]})")
             
             used_decimals[decimal_val] = i + 1
-            data[tscs_code] = {'decimal': decimal_val, 'glyph': ascii_glyph, 'hex': ascii_hex}
+            data[tscs_code] = {'decimal': decimal_val, 'name': name, 'glyph': ascii_glyph, 'hex': ascii_hex}
 
         except ValueError:
             errors.append(f"Line {i+1}: Invalid TSCS Code or Decimal format: {tscs_code}, {decimal_val_str}")
@@ -98,7 +149,7 @@ def validate_ascii_mapping(file_path):
 def validate_unicode_mapping(file_path):
     print(f"Validating {file_path}...")
     errors = []
-    data = {} # tscs_code -> {decimal, glyph, cp}
+    data = {} # tscs_code -> {decimal, name, glyph, cp}
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
@@ -115,15 +166,18 @@ def validate_unicode_mapping(file_path):
             
         tscs_code = parts[1]
         decimal_val_str = parts[2]
+        name = parts[3]
         
         u_code_point = None
         glyph = None
         
-        for p in parts:
+        # Try to find U+ and then next part is glyph
+        for j, p in enumerate(parts):
             if 'U+' in p:
                 u_code_point = p.replace('`', '').strip()
-            elif u_code_point and glyph is None:
-                glyph = extract_glyph(p)
+                if j + 1 < len(parts):
+                    glyph = extract_glyph(parts[j+1])
+                break
         
         if not u_code_point:
             continue
@@ -141,39 +195,46 @@ def validate_unicode_mapping(file_path):
                 errors.append(f"Line {i+1}: Duplicate Decimal value {decimal_val} (previously at line {used_decimals[decimal_val]})")
             
             used_decimals[decimal_val] = i + 1
-            data[tscs_code] = {'decimal': decimal_val, 'glyph': glyph, 'cp': u_code_point}
+            data[tscs_code] = {'decimal': decimal_val, 'name': name, 'glyph': glyph, 'cp': u_code_point}
 
         except ValueError:
              errors.append(f"Line {i+1}: Invalid TSCS Code or Decimal format: {tscs_code}, {decimal_val_str}")
              continue
 
         # 2. Unicode Code Point to Glyph
-        try:
-            cp_val = int(u_code_point.replace('U+', ''), 16)
-            expected_char = chr(cp_val)
-            actual_glyph = glyph
-            
-            control_glyph = get_control_glyph(cp_val)
-            if control_glyph:
-                if actual_glyph != control_glyph:
-                    errors.append(f"Line {i+1}: Unicode {u_code_point} should use control glyph '{control_glyph}', but found '{actual_glyph}'")
-            else:
-                if expected_char != actual_glyph:
-                    errors.append(f"Line {i+1}: Unicode {u_code_point} ({expected_char}) does not match glyph '{actual_glyph}'")
-                    
-        except ValueError:
-            errors.append(f"Line {i+1}: Invalid Unicode Code Point format: {u_code_point}")
+        if u_code_point != "U+????":
+            try:
+                cp_val = int(u_code_point.replace('U+', ''), 16)
+                expected_char = chr(cp_val)
+                actual_glyph = glyph
+                
+                control_glyph = get_control_glyph(cp_val)
+                if control_glyph:
+                    if actual_glyph != control_glyph:
+                        errors.append(f"Line {i+1}: Unicode {u_code_point} should use control glyph '{control_glyph}', but found '{actual_glyph}'")
+                else:
+                    if expected_char != actual_glyph:
+                        errors.append(f"Line {i+1}: Unicode {u_code_point} ({expected_char}) does not match glyph '{actual_glyph}'")
+                        
+            except ValueError:
+                errors.append(f"Line {i+1}: Invalid Unicode Code Point format: {u_code_point}")
 
     return errors, data
 
 def main():
+    char_file = 'src/character-codes.md'
     ascii_file = 'src/ascii-mapping.md'
     unicode_file = 'src/unicode-mapping.md'
     
     all_errors = []
     
+    char_data = {}
     ascii_data = {}
     unicode_data = {}
+
+    if os.path.exists(char_file):
+        errs, char_data = validate_character_codes(char_file)
+        all_errors.extend(errs)
 
     if os.path.exists(ascii_file):
         errs, ascii_data = validate_ascii_mapping(ascii_file)
@@ -185,28 +246,27 @@ def main():
 
     # Cross-file consistency
     print("Checking cross-file consistency...")
-    for tscs_code in ascii_data:
-        if tscs_code in unicode_data:
-            a_glyph = ascii_data[tscs_code]['glyph']
-            u_glyph = unicode_data[tscs_code]['glyph']
-            
-            if a_glyph != "*UNMAPPED*":
-                # For some characters, Unicode uses control symbols but ASCII uses the actual char or name
-                # Actually for graphic characters they should match.
-                # For control characters, ASCII mapping might have something else?
-                # Let's check a few.
-                # Space: ASCII ` `, Unicode `␠`
-                # We need to normalize these for comparison.
-                
-                # Check if it's a control character (decimal < 33 or 127)
-                decimal = ascii_data[tscs_code]['decimal']
-                if decimal < 33 or decimal == 127 or decimal == 89: # 89 is Space
-                    # Control characters - we expect them to be different glyphs in these docs
-                    # as Unicode mapping uses Control Pictures.
-                    pass
-                else:
-                    if a_glyph != u_glyph:
-                        all_errors.append(f"Consistency Error: TSCS Code {tscs_code} is '{a_glyph}' in ASCII but '{u_glyph}' in Unicode")
+    
+    # Check ASCII against Character Codes
+    for code, info in ascii_data.items():
+        if code in char_data:
+            if info['decimal'] != char_data[code]['decimal']:
+                all_errors.append(f"Consistency Error: Decimal for {code} is {info['decimal']} in ASCII but {char_data[code]['decimal']} in Char Codes")
+            if info['name'] != char_data[code]['name']:
+                all_errors.append(f"Consistency Error: Name for {code} is '{info['name']}' in ASCII but '{char_data[code]['name']}' in Char Codes")
+        else:
+             all_errors.append(f"Consistency Error: TSCS Code {code} found in ASCII mapping but not in character-codes.md")
+
+    # Check Unicode against Character Codes
+    for code, info in unicode_data.items():
+        if code in char_data:
+            if info['decimal'] != char_data[code]['decimal']:
+                all_errors.append(f"Consistency Error: Decimal for {code} is {info['decimal']} in Unicode but {char_data[code]['decimal']} in Char Codes")
+            # Note: Unicode mapping names might have slight variations (case, etc) but let's check
+            if info['name'].lower() != char_data[code]['name'].lower():
+                all_errors.append(f"Consistency Error: Name for {code} is '{info['name']}' in Unicode but '{char_data[code]['name']}' in Char Codes")
+        else:
+             all_errors.append(f"Consistency Error: TSCS Code {code} found in Unicode mapping but not in character-codes.md")
 
     if all_errors:
         print("\nValidation FAILED:")

@@ -4,7 +4,7 @@ This page provides a direct translation mapping from the Ternary Standard Charac
 For TSCS characters that do not have a valid representation in 7-bit ASCII (such as extended symbols or mathematical characters)
 the conversion is explicitly marked with *UNMAPPED*.
 
-### Letters (Latin)
+### Latin Letters
 
 | TSCS Code | Decimal | TSCS Name              | ASCII Glyph | ASCII Hex |
 |:----------|:--------|:-----------------------|:------------|:----------|
@@ -61,66 +61,69 @@ the conversion is explicitly marked with *UNMAPPED*.
 | 002212    | 77      | Latin Capital Letter Y | `Y`         | `0x59`    |
 | 002220    | 78      | Latin Capital Letter Z | `Z`         | `0x5A`    |
 
+### Extended Latain
+None of TSCS extended latain letters have ASCII equivalent.
+
 ### Digits
 
 | TSCS Code | Decimal | TSCS Name       | ASCII Glyph | ASCII Hex |
 |:----------|:--------|:----------------|:------------|:----------|
-| 002221    | 79      | Digit Zero (0)  | `0`         | `0x30`    |
-| 002222    | 80      | Digit One (1)   | `1`         | `0x31`    |
-| 010000    | 81      | Digit Two (2)   | `2`         | `0x32`    |
-| 010001    | 82      | Digit Three (3) | `3`         | `0x33`    |
-| 010002    | 83      | Digit Four (4)  | `4`         | `0x34`    |
-| 010010    | 84      | Digit Five (5)  | `5`         | `0x35`    |
-| 010011    | 85      | Digit Six (6)   | `6`         | `0x36`    |
-| 010012    | 86      | Digit Seven (7) | `7`         | `0x37`    |
-| 010020    | 87      | Digit Eight (8) | `8`         | `0x38`    |
-| 010021    | 88      | Digit Nine (9)  | `9`         | `0x39`    |
+| 100222    | 269     | Digit Zero (0)  | `0`         | `0x30`    |
+| 101000    | 270     | Digit One (1)   | `1`         | `0x31`    |
+| 101001    | 271     | Digit Two (2)   | `2`         | `0x32`    |
+| 101002    | 272     | Digit Three (3) | `3`         | `0x33`    |
+| 101010    | 273     | Digit Four (4)  | `4`         | `0x34`    |
+| 101011    | 274     | Digit Five (5)  | `5`         | `0x35`    |
+| 101012    | 275     | Digit Six (6)   | `6`         | `0x36`    |
+| 101020    | 276     | Digit Seven (7) | `7`         | `0x37`    |
+| 101021    | 277     | Digit Eight (8) | `8`         | `0x38`    |
+| 101022    | 278     | Digit Nine (9)  | `9`         | `0x39`    |
 
 ### Symbols 
 
 | TSCS Code | Decimal | TSCS Name            | ASCII Glyph | ASCII Hex |
 |:----------|:--------|:---------------------|:------------|:----------|
-| 010022    | 89      | Space                | ` `         | `0x20`    |
-| 010100    | 90      | Exclamation Mark     | `!`         | `0x21`    |
-| 010101    | 91      | Quotation Mark       | `"`         | `0x22`    |
-| 010102    | 92      | Number Sign          | `#`         | `0x23`    |
-| 010110    | 93      | Dollar Sign          | `$`         | `0x24`    |
-| 010111    | 94      | Percent Sign         | `%`         | `0x25`    |
-| 010112    | 95      | Ampersand            | `&`         | `0x26`    |
-| 010120    | 96      | Apostrophe           | `'`         | `0x27`    |
-| 010121    | 97      | Left Parenthesis     | `(`         | `0x28`    |
-| 010122    | 98      | Right Parenthesis    | `)`         | `0x29`    |
-| 010200    | 99      | Asterisk             | `*`         | `0x2A`    |
-| 010201    | 100     | Plus Sign            | `+`         | `0x2B`    |
-| 010202    | 101     | Comma                | `,`         | `0x2C`    |
-| 010210    | 102     | Hyphen-Minus         | `-`         | `0x2D`    |
-| 010211    | 103     | Full Stop            | `.`         | `0x2E`    |
-| 010212    | 104     | Solidus (Slash)      | `/`         | `0x2F`    |
-| 010220    | 105     | Colon                | `:`         | `0x3A`    |
-| 010221    | 106     | Semicolon            | `;`         | `0x3B`    |
-| 010222    | 107     | Less-Than Sign       | `<`         | `0x3C`    |
-| 011000    | 108     | Equals Sign          | `=`         | `0x3D`    |
-| 011001    | 109     | Greater-Than Sign    | `>`         | `0x3E`    |
-| 011002    | 110     | Question Mark        | `?`         | `0x3F`    |
-| 011010    | 111     | Commercial At        | `@`         | `0x40`    |
-| 011011    | 112     | Left Square Bracket  | `[`         | `0x5B`    |
-| 011012    | 113     | Reverse Solidus      | `\`         | `0x5C`    |
-| 011020    | 114     | Right Square Bracket | `]`         | `0x5D`    |
-| 011021    | 115     | Circumflex Accent    | `^`         | `0x5E`    |
-| 011022    | 116     | Low Line             | `_`         | `0x5F`    |
-| 011100    | 117     | Grave Accent         | `` ` ``     | `0x60`    |
-| 011101    | 118     | Left Curly Bracket   | `{`         | `0x7B`    |
-| 011102    | 119     | Vertical Line        | `\|`        | `0x7C`    |
-| 011110    | 120     | Right Curly Bracket  | `}`         | `0x7D`    |
-| 011111    | 121     | Tilde                | `~`         | `0x7E`    |
-| 011112    | 122     | Rightwards Arrow     | *UNMAPPED*  | *NONE*    |
-| 011120    | 123     | Leftwards Arrow      | *UNMAPPED*  | *NONE*    |
-| 011121    | 124     | Upwards Arrow        | *UNMAPPED*  | *NONE*    |
-| 011122    | 125     | Downwards Arrow      | *UNMAPPED*  | *NONE*    |
-| 011200    | 126     | Bullet               | *UNMAPPED*  | *NONE*    |
-| 011201    | 127     | Degree Sign          | *UNMAPPED*  | *NONE*    |
-| 011202    | 128     | Plus-Minus Sign      | *UNMAPPED*  | *NONE*    |
-| 011210    | 129     | Not Equal To         | *UNMAPPED*  | *NONE*    |
+| 101100    | 279     | Space                | ` `         | `0x20`    |
+| 101101    | 280     | Exclamation Mark     | `!`         | `0x21`    |
+| 101102    | 281     | Quotation Mark       | `"`         | `0x22`    |
+| 101110    | 282     | Number Sign          | `#`         | `0x23`    |
+| 101111    | 283     | Dollar Sign          | `$`         | `0x24`    |
+| 101112    | 284     | Percent Sign         | `%`         | `0x25`    |
+| 101120    | 285     | Ampersand            | `&`         | `0x26`    |
+| 101121    | 286     | Apostrophe           | `'`         | `0x27`    |
+| 101122    | 287     | Left Parenthesis     | `(`         | `0x28`    |
+| 101200    | 288     | Right Parenthesis    | `)`         | `0x29`    |
+| 101201    | 289     | Asterisk             | `*`         | `0x2A`    |
+| 101202    | 290     | Plus Sign            | `+`         | `0x2B`    |
+| 101210    | 291     | Comma                | `,`         | `0x2C`    |
+| 101211    | 292     | Hyphen-Minus         | `-`         | `0x2D`    |
+| 101212    | 293     | Full Stop            | `.`         | `0x2E`    |
+| 101220    | 294     | Solidus (Slash)      | `/`         | `0x2F`    |
+| 101221    | 295     | Colon                | `:`         | `0x3A`    |
+| 101222    | 296     | Semicolon            | `;`         | `0x3B`    |
+| 102000    | 297     | Less-Than Sign       | `<`         | `0x3C`    |
+| 102001    | 298     | Equals Sign          | `=`         | `0x3D`    |
+| 102002    | 299     | Greater-Than Sign    | `>`         | `0x3E`    |
+| 102010    | 300     | Question Mark        | `?`         | `0x3F`    |
+| 102011    | 301     | Commercial At        | `@`         | `0x40`    |
+| 102012    | 302     | Left Square Bracket  | `[`         | `0x5B`    |
+| 102020    | 303     | Reverse Solidus      | `\`         | `0x5C`    |
+| 102021    | 304     | Right Square Bracket | `]`         | `0x5D`    |
+| 102022    | 305     | Circumflex Accent    | `^`         | `0x5E`    |
+| 102100    | 306     | Low Line             | `_`         | `0x5F`    |
+| 102101    | 307     | Grave Accent         | `` ` ``     | `0x60`    |
+| 102102    | 308     | Left Curly Bracket   | `{`         | `0x7B`    |
+| 102110    | 309     | Vertical Line        | `\|`        | `0x7C`    |
+| 102111    | 310     | Right Curly Bracket  | `}`         | `0x7D`    |
+| 102112    | 311     | Tilde                | `~`         | `0x7E`    |
+| 102120    | 312     | Rightwards Arrow     | *UNMAPPED*  | *NONE*    |
+| 102121    | 313     | Leftwards Arrow      | *UNMAPPED*  | *NONE*    |
+| 102122    | 314     | Upwards Arrow        | *UNMAPPED*  | *NONE*    |
+| 102200    | 315     | Downwards Arrow      | *UNMAPPED*  | *NONE*    |
+| 102201    | 316     | Bullet               | *UNMAPPED*  | *NONE*    |
+| 102202    | 317     | Degree Sign          | *UNMAPPED*  | *NONE*    |
+| 102210    | 318     | Plus-Minus Sign      | *UNMAPPED*  | *NONE*    |
+| 102211    | 319     | Not Equal To         | *UNMAPPED*  | *NONE*    |
 
 ### Math Symbols
 None of TSCS extended math symbols have ASCII equivalent.
