@@ -89,7 +89,23 @@ def generate():
         f.write("# Character Codes\n\n")
         f.write("This document defines the mapping between tryte values and characters in the Ternary Standard Character Set (TSCS).\n\n")
         f.write("> [!IMPORTANT]\n")
-        f.write("> The specific mapping of numeric values to characters is currently a WIP.\n")
+        f.write("> The specific mapping of numeric values to characters is currently a WIP.\n\n")
+
+        f.write("## Overview\n\n")
+        summary_headers = ["Ternary Range", "Decimal Range", "Category"]
+        summary_rows = []
+        for cat in categories:
+            if cat["items"]:
+                first_code = cat["items"][0]
+                last_code = cat["items"][-1]
+                first_dec = ternary_to_decimal(first_code)
+                last_dec = ternary_to_decimal(last_code)
+                summary_rows.append([
+                    f"`{first_code}` .. `{last_code}`",
+                    f"{first_dec} .. {last_dec}",
+                    cat["name"]
+                ])
+        f.write(align_table(summary_rows, summary_headers) + "\n\n")
         
         for cat in categories:
             f.write(f"\n{'#' * cat['level']} {cat['name']}\n\n")

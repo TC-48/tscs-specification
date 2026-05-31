@@ -51,11 +51,11 @@ def validate_character_codes(file_path):
 
     for i, line in enumerate(lines):
         line = line.strip()
-        if not line.startswith('|') or 'Code' in line or ':---' in line:
+        if not line.startswith('|') or 'Code' in line or ':---' in line or 'Range' in line:
             continue
         
         parts = parse_markdown_row(line)
-        if len(parts) < 4:
+        if len(parts) < 4 or '..' in parts[1]:
             continue
             
         tscs_code = parts[1]
