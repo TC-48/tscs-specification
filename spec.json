@@ -1390,572 +1390,817 @@
     },
     "101100": {
       "code": "101100",
+      "name": "Greek Capital Letter Alpha",
+      "unicode": "U+0391"
+    },
+    "101101": {
+      "code": "101101",
+      "name": "Greek Capital Letter Beta",
+      "unicode": "U+0392"
+    },
+    "101102": {
+      "code": "101102",
+      "name": "Greek Capital Letter Gamma",
+      "unicode": "U+0393"
+    },
+    "101110": {
+      "code": "101110",
+      "name": "Greek Capital Letter Delta",
+      "unicode": "U+0394"
+    },
+    "101111": {
+      "code": "101111",
+      "name": "Greek Capital Letter Epsilon",
+      "unicode": "U+0395"
+    },
+    "101112": {
+      "code": "101112",
+      "name": "Greek Capital Letter Zeta",
+      "unicode": "U+0396"
+    },
+    "101120": {
+      "code": "101120",
+      "name": "Greek Capital Letter Eta",
+      "unicode": "U+0397"
+    },
+    "101121": {
+      "code": "101121",
+      "name": "Greek Capital Letter Theta",
+      "unicode": "U+0398"
+    },
+    "101122": {
+      "code": "101122",
+      "name": "Greek Capital Letter Iota",
+      "unicode": "U+0399"
+    },
+    "101200": {
+      "code": "101200",
+      "name": "Greek Capital Letter Kappa",
+      "unicode": "U+039A"
+    },
+    "101201": {
+      "code": "101201",
+      "name": "Greek Capital Letter Lambda",
+      "unicode": "U+039B"
+    },
+    "101202": {
+      "code": "101202",
+      "name": "Greek Capital Letter Mu",
+      "unicode": "U+039C"
+    },
+    "101210": {
+      "code": "101210",
+      "name": "Greek Capital Letter Nu",
+      "unicode": "U+039D"
+    },
+    "101211": {
+      "code": "101211",
+      "name": "Greek Capital Letter Xi",
+      "unicode": "U+039E"
+    },
+    "101212": {
+      "code": "101212",
+      "name": "Greek Capital Letter Omicron",
+      "unicode": "U+039F"
+    },
+    "101220": {
+      "code": "101220",
+      "name": "Greek Capital Letter Pi",
+      "unicode": "U+03A0"
+    },
+    "101221": {
+      "code": "101221",
+      "name": "Greek Capital Letter Rho",
+      "unicode": "U+03A1"
+    },
+    "101222": {
+      "code": "101222",
+      "name": "Greek Capital Letter Sigma",
+      "unicode": "U+03A3"
+    },
+    "102000": {
+      "code": "102000",
+      "name": "Greek Capital Letter Tau",
+      "unicode": "U+03A4"
+    },
+    "102001": {
+      "code": "102001",
+      "name": "Greek Capital Letter Upsilon",
+      "unicode": "U+03A5"
+    },
+    "102002": {
+      "code": "102002",
+      "name": "Greek Capital Letter Phi",
+      "unicode": "U+03A6"
+    },
+    "102010": {
+      "code": "102010",
+      "name": "Greek Capital Letter Chi",
+      "unicode": "U+03A7"
+    },
+    "102011": {
+      "code": "102011",
+      "name": "Greek Capital Letter Psi",
+      "unicode": "U+03A8"
+    },
+    "102012": {
+      "code": "102012",
+      "name": "Greek Capital Letter Omega",
+      "unicode": "U+03A9"
+    },
+    "102020": {
+      "code": "102020",
+      "name": "Greek Small Letter Alpha",
+      "unicode": "U+03B1"
+    },
+    "102021": {
+      "code": "102021",
+      "name": "Greek Small Letter Beta",
+      "unicode": "U+03B2"
+    },
+    "102022": {
+      "code": "102022",
+      "name": "Greek Small Letter Gamma",
+      "unicode": "U+03B3"
+    },
+    "102100": {
+      "code": "102100",
+      "name": "Greek Small Letter Delta",
+      "unicode": "U+03B4"
+    },
+    "102101": {
+      "code": "102101",
+      "name": "Greek Small Letter Epsilon",
+      "unicode": "U+03B5"
+    },
+    "102102": {
+      "code": "102102",
+      "name": "Greek Small Letter Zeta",
+      "unicode": "U+03B6"
+    },
+    "102110": {
+      "code": "102110",
+      "name": "Greek Small Letter Eta",
+      "unicode": "U+03B7"
+    },
+    "102111": {
+      "code": "102111",
+      "name": "Greek Small Letter Theta",
+      "unicode": "U+03B8"
+    },
+    "102112": {
+      "code": "102112",
+      "name": "Greek Small Letter Iota",
+      "unicode": "U+03B9"
+    },
+    "102120": {
+      "code": "102120",
+      "name": "Greek Small Letter Kappa",
+      "unicode": "U+03BA"
+    },
+    "102121": {
+      "code": "102121",
+      "name": "Greek Small Letter Lambda",
+      "unicode": "U+03BB"
+    },
+    "102122": {
+      "code": "102122",
+      "name": "Greek Small Letter Mu",
+      "unicode": "U+03BC"
+    },
+    "102200": {
+      "code": "102200",
+      "name": "Greek Small Letter Nu",
+      "unicode": "U+03BD"
+    },
+    "102201": {
+      "code": "102201",
+      "name": "Greek Small Letter Xi",
+      "unicode": "U+03BE"
+    },
+    "102202": {
+      "code": "102202",
+      "name": "Greek Small Letter Omicron",
+      "unicode": "U+03BF"
+    },
+    "102210": {
+      "code": "102210",
+      "name": "Greek Small Letter Pi",
+      "unicode": "U+03C0"
+    },
+    "102211": {
+      "code": "102211",
+      "name": "Greek Small Letter Rho",
+      "unicode": "U+03C1"
+    },
+    "102212": {
+      "code": "102212",
+      "name": "Greek Small Letter Final Sigma",
+      "unicode": "U+03C2"
+    },
+    "102220": {
+      "code": "102220",
+      "name": "Greek Small Letter Sigma",
+      "unicode": "U+03C3"
+    },
+    "102221": {
+      "code": "102221",
+      "name": "Greek Small Letter Tau",
+      "unicode": "U+03C4"
+    },
+    "102222": {
+      "code": "102222",
+      "name": "Greek Small Letter Upsilon",
+      "unicode": "U+03C5"
+    },
+    "110000": {
+      "code": "110000",
+      "name": "Greek Small Letter Phi",
+      "unicode": "U+03C6"
+    },
+    "110001": {
+      "code": "110001",
+      "name": "Greek Small Letter Chi",
+      "unicode": "U+03C7"
+    },
+    "110002": {
+      "code": "110002",
+      "name": "Greek Small Letter Psi",
+      "unicode": "U+03C8"
+    },
+    "110010": {
+      "code": "110010",
+      "name": "Greek Small Letter Omega",
+      "unicode": "U+03C9"
+    },
+    "110112": {
+      "code": "110112",
       "name": "Space",
       "ascii": " ",
       "unicode": "U+0020"
     },
-    "101101": {
-      "code": "101101",
+    "110120": {
+      "code": "110120",
       "name": "Exclamation Mark",
       "ascii": "!",
       "unicode": "U+0021"
     },
-    "101102": {
-      "code": "101102",
+    "110121": {
+      "code": "110121",
       "name": "Quotation Mark",
       "ascii": "\"",
       "unicode": "U+0022"
     },
-    "101110": {
-      "code": "101110",
+    "110122": {
+      "code": "110122",
       "name": "Number Sign",
       "ascii": "#",
       "unicode": "U+0023"
     },
-    "101111": {
-      "code": "101111",
+    "110200": {
+      "code": "110200",
       "name": "Dollar Sign",
       "ascii": "$",
       "unicode": "U+0024"
     },
-    "101112": {
-      "code": "101112",
+    "110201": {
+      "code": "110201",
       "name": "Percent Sign",
       "ascii": "%",
       "unicode": "U+0025"
     },
-    "101120": {
-      "code": "101120",
+    "110202": {
+      "code": "110202",
       "name": "Ampersand",
       "ascii": "&",
       "unicode": "U+0026"
     },
-    "101121": {
-      "code": "101121",
+    "110210": {
+      "code": "110210",
       "name": "Apostrophe",
       "ascii": "'",
       "unicode": "U+0027"
     },
-    "101122": {
-      "code": "101122",
+    "110211": {
+      "code": "110211",
       "name": "Left Parenthesis",
       "ascii": "(",
       "unicode": "U+0028"
     },
-    "101200": {
-      "code": "101200",
+    "110212": {
+      "code": "110212",
       "name": "Right Parenthesis",
       "ascii": ")",
       "unicode": "U+0029"
     },
-    "101201": {
-      "code": "101201",
+    "110220": {
+      "code": "110220",
       "name": "Asterisk",
       "ascii": "*",
       "unicode": "U+002A"
     },
-    "101202": {
-      "code": "101202",
+    "110221": {
+      "code": "110221",
       "name": "Plus Sign",
       "ascii": "+",
       "unicode": "U+002B"
     },
-    "101210": {
-      "code": "101210",
+    "110222": {
+      "code": "110222",
       "name": "Comma",
       "ascii": ",",
       "unicode": "U+002C"
     },
-    "101211": {
-      "code": "101211",
+    "111000": {
+      "code": "111000",
       "name": "Hyphen-Minus",
       "ascii": "-",
       "unicode": "U+002D"
     },
-    "101212": {
-      "code": "101212",
+    "111001": {
+      "code": "111001",
       "name": "Full Stop",
       "ascii": ".",
       "unicode": "U+002E"
     },
-    "101220": {
-      "code": "101220",
+    "111002": {
+      "code": "111002",
       "name": "Solidus (Slash)",
       "ascii": "/",
       "unicode": "U+002F"
     },
-    "101221": {
-      "code": "101221",
+    "111010": {
+      "code": "111010",
       "name": "Colon",
       "ascii": ":",
       "unicode": "U+003A"
     },
-    "101222": {
-      "code": "101222",
+    "111011": {
+      "code": "111011",
       "name": "Semicolon",
       "ascii": ";",
       "unicode": "U+003B"
     },
-    "102000": {
-      "code": "102000",
+    "111012": {
+      "code": "111012",
       "name": "Less-Than Sign",
       "ascii": "<",
       "unicode": "U+003C"
     },
-    "102001": {
-      "code": "102001",
+    "111020": {
+      "code": "111020",
       "name": "Equals Sign",
       "ascii": "=",
       "unicode": "U+003D"
     },
-    "102002": {
-      "code": "102002",
+    "111021": {
+      "code": "111021",
       "name": "Greater-Than Sign",
       "ascii": ">",
       "unicode": "U+003E"
     },
-    "102010": {
-      "code": "102010",
+    "111022": {
+      "code": "111022",
       "name": "Question Mark",
       "ascii": "?",
       "unicode": "U+003F"
     },
-    "102011": {
-      "code": "102011",
+    "111100": {
+      "code": "111100",
       "name": "Commercial At",
       "ascii": "@",
       "unicode": "U+0040"
     },
-    "102012": {
-      "code": "102012",
+    "111101": {
+      "code": "111101",
       "name": "Left Square Bracket",
       "ascii": "[",
       "unicode": "U+005B"
     },
-    "102020": {
-      "code": "102020",
+    "111102": {
+      "code": "111102",
       "name": "Reverse Solidus",
       "ascii": "\\",
       "unicode": "U+005C"
     },
-    "102021": {
-      "code": "102021",
+    "111110": {
+      "code": "111110",
       "name": "Right Square Bracket",
       "ascii": "]",
       "unicode": "U+005D"
     },
-    "102022": {
-      "code": "102022",
+    "111111": {
+      "code": "111111",
       "name": "Circumflex Accent",
       "ascii": "^",
       "unicode": "U+005E"
     },
-    "102100": {
-      "code": "102100",
+    "111112": {
+      "code": "111112",
       "name": "Low Line",
       "ascii": "_",
       "unicode": "U+005F"
     },
-    "102101": {
-      "code": "102101",
+    "111120": {
+      "code": "111120",
       "name": "Grave Accent",
       "ascii": "`",
       "unicode": "U+0060"
     },
-    "102102": {
-      "code": "102102",
+    "111121": {
+      "code": "111121",
       "name": "Left Curly Bracket",
       "ascii": "{",
       "unicode": "U+007B"
     },
-    "102110": {
-      "code": "102110",
+    "111122": {
+      "code": "111122",
       "name": "Vertical Line",
       "ascii": "|",
       "unicode": "U+007C"
     },
-    "102111": {
-      "code": "102111",
+    "111200": {
+      "code": "111200",
       "name": "Right Curly Bracket",
       "ascii": "}",
       "unicode": "U+007D"
     },
-    "102112": {
-      "code": "102112",
+    "111201": {
+      "code": "111201",
       "name": "Tilde",
       "ascii": "~",
       "unicode": "U+007E"
     },
-    "102120": {
-      "code": "102120",
+    "111202": {
+      "code": "111202",
       "name": "Rightwards Arrow",
       "ascii": null,
       "unicode": "U+2192"
     },
-    "102121": {
-      "code": "102121",
+    "111210": {
+      "code": "111210",
       "name": "Leftwards Arrow",
       "ascii": null,
       "unicode": "U+2190"
     },
-    "102122": {
-      "code": "102122",
+    "111211": {
+      "code": "111211",
       "name": "Upwards Arrow",
       "ascii": null,
       "unicode": "U+2191"
     },
-    "102200": {
-      "code": "102200",
+    "111212": {
+      "code": "111212",
       "name": "Downwards Arrow",
       "ascii": null,
       "unicode": "U+2193"
     },
-    "102201": {
-      "code": "102201",
+    "111220": {
+      "code": "111220",
       "name": "Bullet",
       "ascii": null,
       "unicode": "U+2022"
     },
-    "102202": {
-      "code": "102202",
+    "111221": {
+      "code": "111221",
       "name": "Degree Sign",
       "ascii": null,
       "unicode": "U+00B0"
     },
-    "102210": {
-      "code": "102210",
+    "111222": {
+      "code": "111222",
       "name": "Plus-Minus Sign",
       "ascii": null,
       "unicode": "U+00B1"
     },
-    "102211": {
-      "code": "102211",
+    "112000": {
+      "code": "112000",
       "name": "Not Equal To",
       "ascii": null,
       "unicode": "U+2260"
     },
-    "102212": {
-      "code": "102212",
+    "112001": {
+      "code": "112001",
       "name": "Multiplication Sign",
       "unicode": "U+00D7"
     },
-    "102220": {
-      "code": "102220",
+    "112002": {
+      "code": "112002",
       "name": "Division Sign",
       "unicode": "U+00F7"
     },
-    "102221": {
-      "code": "102221",
+    "112010": {
+      "code": "112010",
       "name": "Less-Than or Equal To",
       "unicode": "U+2264"
     },
-    "102222": {
-      "code": "102222",
+    "112011": {
+      "code": "112011",
       "name": "Greater-Than or Equal To",
       "unicode": "U+2265"
     },
-    "110000": {
-      "code": "110000",
+    "112012": {
+      "code": "112012",
       "name": "Approximately Equal To",
       "unicode": "U+2248"
     },
-    "110001": {
-      "code": "110001",
+    "112020": {
+      "code": "112020",
       "name": "Identical To",
       "unicode": "U+2261"
     },
-    "110002": {
-      "code": "110002",
+    "112021": {
+      "code": "112021",
       "name": "Square Root",
       "unicode": "U+221A"
     },
-    "110010": {
-      "code": "110010",
+    "112022": {
+      "code": "112022",
       "name": "Infinity",
       "unicode": "U+221E"
     },
-    "110011": {
-      "code": "110011",
+    "112100": {
+      "code": "112100",
       "name": "Integral",
       "unicode": "U+222B"
     },
-    "110012": {
-      "code": "110012",
+    "112101": {
+      "code": "112101",
       "name": "Partial Differential",
       "unicode": "U+2202"
     },
-    "110020": {
-      "code": "110020",
+    "112102": {
+      "code": "112102",
       "name": "N-ary Summation",
       "unicode": "U+2211"
     },
-    "110021": {
-      "code": "110021",
+    "112110": {
+      "code": "112110",
       "name": "N-ary Product",
       "unicode": "U+220F"
     },
-    "110022": {
-      "code": "110022",
+    "112111": {
+      "code": "112111",
       "name": "Increment",
       "unicode": "U+2206"
     },
-    "110100": {
-      "code": "110100",
+    "112112": {
+      "code": "112112",
       "name": "Greek Small Letter Pi",
       "unicode": "U+03C0"
     },
-    "110101": {
-      "code": "110101",
+    "112120": {
+      "code": "112120",
       "name": "Logical AND",
       "unicode": "U+2227"
     },
-    "110102": {
-      "code": "110102",
+    "112121": {
+      "code": "112121",
       "name": "Logical OR",
       "unicode": "U+2228"
     },
-    "110110": {
-      "code": "110110",
+    "112122": {
+      "code": "112122",
       "name": "Logical NOT",
       "unicode": "U+00AC"
     },
-    "110111": {
-      "code": "110111",
+    "112200": {
+      "code": "112200",
       "name": "For All",
       "unicode": "U+2200"
     },
-    "110112": {
-      "code": "110112",
+    "112201": {
+      "code": "112201",
       "name": "There Exists",
       "unicode": "U+2203"
     },
-    "110120": {
-      "code": "110120",
+    "112202": {
+      "code": "112202",
       "name": "Empty Set",
       "unicode": "U+2205"
     },
-    "110121": {
-      "code": "110121",
+    "112210": {
+      "code": "112210",
       "name": "Element Of",
       "unicode": "U+2208"
     },
-    "110122": {
-      "code": "110122",
+    "112211": {
+      "code": "112211",
       "name": "Not An Element Of",
       "unicode": "U+2209"
     },
-    "110200": {
-      "code": "110200",
+    "112212": {
+      "code": "112212",
       "name": "Intersection",
       "unicode": "U+2229"
     },
-    "110201": {
-      "code": "110201",
+    "112220": {
+      "code": "112220",
       "name": "Union",
       "unicode": "U+222A"
     },
-    "110202": {
-      "code": "110202",
+    "112221": {
+      "code": "112221",
       "name": "Subset Of",
       "unicode": "U+2282"
     },
-    "110210": {
-      "code": "110210",
+    "112222": {
+      "code": "112222",
       "name": "Subset Of Or Equal To",
       "unicode": "U+2286"
     },
-    "110211": {
-      "code": "110211",
+    "120000": {
+      "code": "120000",
       "name": "Therefore",
       "unicode": "U+2234"
     },
-    "110212": {
-      "code": "110212",
+    "120001": {
+      "code": "120001",
       "name": "Because",
       "unicode": "U+2235"
     },
-    "110220": {
-      "code": "110220",
+    "120002": {
+      "code": "120002",
       "name": "Proportional To",
       "unicode": "U+221D"
     },
-    "110221": {
-      "code": "110221",
+    "120010": {
+      "code": "120010",
       "name": "Much Less-Than",
       "unicode": "U+226A"
     },
-    "110222": {
-      "code": "110222",
+    "120011": {
+      "code": "120011",
       "name": "Much Greater-Than",
       "unicode": "U+226B"
     },
-    "111000": {
-      "code": "111000",
+    "120012": {
+      "code": "120012",
       "name": "Box Drawings Light Horizontal",
       "unicode": "U+2500"
     },
-    "111001": {
-      "code": "111001",
+    "120020": {
+      "code": "120020",
       "name": "Box Drawings Light Vertical",
       "unicode": "U+2502"
     },
-    "111002": {
-      "code": "111002",
+    "120021": {
+      "code": "120021",
       "name": "Box Drawings Light Down and Right",
       "unicode": "U+250C"
     },
-    "111010": {
-      "code": "111010",
+    "120022": {
+      "code": "120022",
       "name": "Box Drawings Light Down and Left",
       "unicode": "U+2510"
     },
-    "111011": {
-      "code": "111011",
+    "120100": {
+      "code": "120100",
       "name": "Box Drawings Light Up and Right",
       "unicode": "U+2514"
     },
-    "111012": {
-      "code": "111012",
+    "120101": {
+      "code": "120101",
       "name": "Box Drawings Light Up and Left",
       "unicode": "U+2518"
     },
-    "111020": {
-      "code": "111020",
+    "120102": {
+      "code": "120102",
       "name": "Box Drawings Light Vertical and Right",
       "unicode": "U+251C"
     },
-    "111021": {
-      "code": "111021",
+    "120110": {
+      "code": "120110",
       "name": "Box Drawings Light Vertical and Left",
       "unicode": "U+2524"
     },
-    "111022": {
-      "code": "111022",
+    "120111": {
+      "code": "120111",
       "name": "Box Drawings Light Down and Horizontal",
       "unicode": "U+252C"
     },
-    "111100": {
-      "code": "111100",
+    "120112": {
+      "code": "120112",
       "name": "Box Drawings Light Up and Horizontal",
       "unicode": "U+2534"
     },
-    "111101": {
-      "code": "111101",
+    "120120": {
+      "code": "120120",
       "name": "Box Drawings Light Vertical and Horizontal",
       "unicode": "U+253C"
     },
-    "112000": {
-      "code": "112000",
+    "120121": {
+      "code": "120121",
       "name": "Box Drawings Double Horizontal",
       "unicode": "U+2550"
     },
-    "112001": {
-      "code": "112001",
+    "120122": {
+      "code": "120122",
       "name": "Box Drawings Double Vertical",
       "unicode": "U+2551"
     },
-    "112002": {
-      "code": "112002",
+    "120200": {
+      "code": "120200",
       "name": "Box Drawings Double Down and Right",
       "unicode": "U+2554"
     },
-    "112010": {
-      "code": "112010",
+    "120201": {
+      "code": "120201",
       "name": "Box Drawings Double Down and Left",
       "unicode": "U+2557"
     },
-    "112011": {
-      "code": "112011",
+    "120202": {
+      "code": "120202",
       "name": "Box Drawings Double Up and Right",
       "unicode": "U+255A"
     },
-    "112012": {
-      "code": "112012",
+    "120210": {
+      "code": "120210",
       "name": "Box Drawings Double Up and Left",
       "unicode": "U+255D"
     },
-    "112020": {
-      "code": "112020",
+    "120211": {
+      "code": "120211",
       "name": "Box Drawings Double Vertical and Right",
       "unicode": "U+2560"
     },
-    "112021": {
-      "code": "112021",
+    "120212": {
+      "code": "120212",
       "name": "Box Drawings Double Vertical and Left",
       "unicode": "U+2563"
     },
-    "112022": {
-      "code": "112022",
+    "120220": {
+      "code": "120220",
       "name": "Box Drawings Double Down and Horizontal",
       "unicode": "U+2566"
     },
-    "112100": {
-      "code": "112100",
+    "120221": {
+      "code": "120221",
       "name": "Box Drawings Double Up and Horizontal",
       "unicode": "U+2569"
     },
-    "112101": {
-      "code": "112101",
+    "120222": {
+      "code": "120222",
       "name": "Box Drawings Double Vertical and Horizontal",
       "unicode": "U+256C"
     },
-    "120000": {
-      "code": "120000",
+    "121000": {
+      "code": "121000",
       "name": "Box Drawings Light Arc Down and Right",
       "unicode": "U+256D"
     },
-    "120001": {
-      "code": "120001",
+    "121001": {
+      "code": "121001",
       "name": "Box Drawings Light Arc Down and Left",
       "unicode": "U+256E"
     },
-    "120002": {
-      "code": "120002",
+    "121002": {
+      "code": "121002",
       "name": "Box Drawings Light Arc Up and Left",
       "unicode": "U+256F"
     },
-    "120010": {
-      "code": "120010",
+    "121010": {
+      "code": "121010",
       "name": "Box Drawings Light Arc Up and Right",
       "unicode": "U+2570"
     },
-    "121000": {
-      "code": "121000",
+    "121011": {
+      "code": "121011",
       "name": "Full Block",
       "unicode": "U+2588"
     },
-    "121001": {
-      "code": "121001",
+    "121012": {
+      "code": "121012",
       "name": "Light Shade",
       "unicode": "U+2591"
     },
-    "121002": {
-      "code": "121002",
+    "121020": {
+      "code": "121020",
       "name": "Medium Shade",
       "unicode": "U+2592"
     },
-    "121010": {
-      "code": "121010",
+    "121021": {
+      "code": "121021",
       "name": "Dark Shade",
       "unicode": "U+2593"
     },
-    "121011": {
-      "code": "121011",
+    "121022": {
+      "code": "121022",
       "name": "Upper Half Block",
       "unicode": "U+2580"
     },
-    "121012": {
-      "code": "121012",
+    "121100": {
+      "code": "121100",
       "name": "Lower Half Block",
       "unicode": "U+2584"
     },
-    "121020": {
-      "code": "121020",
+    "121101": {
+      "code": "121101",
       "name": "Left Half Block",
       "unicode": "U+258C"
     },
-    "121021": {
-      "code": "121021",
+    "121102": {
+      "code": "121102",
       "name": "Right Half Block",
       "unicode": "U+2590"
     }
@@ -2259,7 +2504,7 @@
       ]
     },
     {
-      "name": "Symbols",
+      "name": "Greek Alphabet",
       "level": 3,
       "description": "",
       "items": [
@@ -2303,14 +2548,7 @@
         "102201",
         "102202",
         "102210",
-        "102211"
-      ]
-    },
-    {
-      "name": "Math Symbols",
-      "level": 3,
-      "description": "",
-      "items": [
+        "102211",
         "102212",
         "102220",
         "102221",
@@ -2318,17 +2556,14 @@
         "110000",
         "110001",
         "110002",
-        "110010",
-        "110011",
-        "110012",
-        "110020",
-        "110021",
-        "110022",
-        "110100",
-        "110101",
-        "110102",
-        "110110",
-        "110111",
+        "110010"
+      ]
+    },
+    {
+      "name": "Symbols",
+      "level": 3,
+      "description": "",
+      "items": [
         "110112",
         "110120",
         "110121",
@@ -2341,7 +2576,73 @@
         "110212",
         "110220",
         "110221",
-        "110222"
+        "110222",
+        "111000",
+        "111001",
+        "111002",
+        "111010",
+        "111011",
+        "111012",
+        "111020",
+        "111021",
+        "111022",
+        "111100",
+        "111101",
+        "111102",
+        "111110",
+        "111111",
+        "111112",
+        "111120",
+        "111121",
+        "111122",
+        "111200",
+        "111201",
+        "111202",
+        "111210",
+        "111211",
+        "111212",
+        "111220",
+        "111221",
+        "111222",
+        "112000"
+      ]
+    },
+    {
+      "name": "Math Symbols",
+      "level": 3,
+      "description": "",
+      "items": [
+        "112001",
+        "112002",
+        "112010",
+        "112011",
+        "112012",
+        "112020",
+        "112021",
+        "112022",
+        "112100",
+        "112101",
+        "112102",
+        "112110",
+        "112111",
+        "112112",
+        "112120",
+        "112121",
+        "112122",
+        "112200",
+        "112201",
+        "112202",
+        "112210",
+        "112211",
+        "112212",
+        "112220",
+        "112221",
+        "112222",
+        "120000",
+        "120001",
+        "120002",
+        "120010",
+        "120011"
       ]
     },
     {
@@ -2355,17 +2656,17 @@
       "level": 3,
       "description": "",
       "items": [
-        "111000",
-        "111001",
-        "111002",
-        "111010",
-        "111011",
-        "111012",
-        "111020",
-        "111021",
-        "111022",
-        "111100",
-        "111101"
+        "120012",
+        "120020",
+        "120021",
+        "120022",
+        "120100",
+        "120101",
+        "120102",
+        "120110",
+        "120111",
+        "120112",
+        "120120"
       ]
     },
     {
@@ -2373,17 +2674,17 @@
       "level": 3,
       "description": "",
       "items": [
-        "112000",
-        "112001",
-        "112002",
-        "112010",
-        "112011",
-        "112012",
-        "112020",
-        "112021",
-        "112022",
-        "112100",
-        "112101"
+        "120121",
+        "120122",
+        "120200",
+        "120201",
+        "120202",
+        "120210",
+        "120211",
+        "120212",
+        "120220",
+        "120221",
+        "120222"
       ]
     },
     {
@@ -2391,10 +2692,10 @@
       "level": 3,
       "description": "",
       "items": [
-        "120000",
-        "120001",
-        "120002",
-        "120010"
+        "121000",
+        "121001",
+        "121002",
+        "121010"
       ]
     },
     {
@@ -2402,14 +2703,14 @@
       "level": 3,
       "description": "Solid block elements and textured stipple patterns used for rendering UI backgrounds, progress bars, and simple text-mode shading effects.",
       "items": [
-        "121000",
-        "121001",
-        "121002",
-        "121010",
         "121011",
         "121012",
         "121020",
-        "121021"
+        "121021",
+        "121022",
+        "121100",
+        "121101",
+        "121102"
       ]
     }
   ]
