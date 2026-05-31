@@ -1,0 +1,2178 @@
+{
+  "characters": {
+    "000000": {
+      "code": "000000",
+      "mnemonic": "NUL",
+      "name": "Null",
+      "description": "String terminator or filler."
+    },
+    "000001": {
+      "code": "000001",
+      "mnemonic": "BEL",
+      "name": "Bell",
+      "description": "Alert/Notification (audio or visual)."
+    },
+    "000002": {
+      "code": "000002",
+      "mnemonic": "BS",
+      "name": "Backspace",
+      "description": "Move the cursor back one position."
+    },
+    "000010": {
+      "code": "000010",
+      "mnemonic": "TAB",
+      "name": "Horizontal Tab",
+      "description": "Move the cursor to the next tab stop."
+    },
+    "000011": {
+      "code": "000011",
+      "mnemonic": "EOL",
+      "name": "End of line",
+      "description": "Move the cursor to the next line."
+    },
+    "000012": {
+      "code": "000012",
+      "mnemonic": "CR",
+      "name": "Carriage Return",
+      "description": "Move the cursor to the start of the current line."
+    },
+    "000020": {
+      "code": "000020",
+      "mnemonic": "ESC",
+      "name": "Escape",
+      "description": "Start of an escape or control sequence."
+    },
+    "000021": {
+      "code": "000021",
+      "mnemonic": "DEL",
+      "name": "Delete",
+      "description": "Remove the character at or before the cursor."
+    },
+    "000022": {
+      "code": "000022",
+      "mnemonic": "EOF",
+      "name": "End of File",
+      "description": "Explicit marker for the end of a file or stream."
+    },
+    "000100": {
+      "code": "000100",
+      "mnemonic": "RS",
+      "name": "Record Separator",
+      "description": "Used to separate records in a data stream."
+    },
+    "000101": {
+      "code": "000101",
+      "mnemonic": "US",
+      "name": "Unit Separator",
+      "description": "Used to separate units within a record."
+    },
+    "001000": {
+      "code": "001000",
+      "name": "Latin Small Letter a",
+      "ascii": "a",
+      "unicode": "U+0061"
+    },
+    "001001": {
+      "code": "001001",
+      "name": "Latin Small Letter b",
+      "ascii": "b",
+      "unicode": "U+0062"
+    },
+    "001002": {
+      "code": "001002",
+      "name": "Latin Small Letter c",
+      "ascii": "c",
+      "unicode": "U+0063"
+    },
+    "001010": {
+      "code": "001010",
+      "name": "Latin Small Letter d",
+      "ascii": "d",
+      "unicode": "U+0064"
+    },
+    "001011": {
+      "code": "001011",
+      "name": "Latin Small Letter e",
+      "ascii": "e",
+      "unicode": "U+0065"
+    },
+    "001012": {
+      "code": "001012",
+      "name": "Latin Small Letter f",
+      "ascii": "f",
+      "unicode": "U+0066"
+    },
+    "001020": {
+      "code": "001020",
+      "name": "Latin Small Letter g",
+      "ascii": "g",
+      "unicode": "U+0067"
+    },
+    "001021": {
+      "code": "001021",
+      "name": "Latin Small Letter h",
+      "ascii": "h",
+      "unicode": "U+0068"
+    },
+    "001022": {
+      "code": "001022",
+      "name": "Latin Small Letter i",
+      "ascii": "i",
+      "unicode": "U+0069"
+    },
+    "001100": {
+      "code": "001100",
+      "name": "Latin Small Letter j",
+      "ascii": "j",
+      "unicode": "U+006A"
+    },
+    "001101": {
+      "code": "001101",
+      "name": "Latin Small Letter k",
+      "ascii": "k",
+      "unicode": "U+006B"
+    },
+    "001102": {
+      "code": "001102",
+      "name": "Latin Small Letter l",
+      "ascii": "l",
+      "unicode": "U+006C"
+    },
+    "001110": {
+      "code": "001110",
+      "name": "Latin Small Letter m",
+      "ascii": "m",
+      "unicode": "U+006D"
+    },
+    "001111": {
+      "code": "001111",
+      "name": "Latin Small Letter n",
+      "ascii": "n",
+      "unicode": "U+006E"
+    },
+    "001112": {
+      "code": "001112",
+      "name": "Latin Small Letter o",
+      "ascii": "o",
+      "unicode": "U+006F"
+    },
+    "001120": {
+      "code": "001120",
+      "name": "Latin Small Letter p",
+      "ascii": "p",
+      "unicode": "U+0070"
+    },
+    "001121": {
+      "code": "001121",
+      "name": "Latin Small Letter q",
+      "ascii": "q",
+      "unicode": "U+0071"
+    },
+    "001122": {
+      "code": "001122",
+      "name": "Latin Small Letter r",
+      "ascii": "r",
+      "unicode": "U+0072"
+    },
+    "001200": {
+      "code": "001200",
+      "name": "Latin Small Letter s",
+      "ascii": "s",
+      "unicode": "U+0073"
+    },
+    "001201": {
+      "code": "001201",
+      "name": "Latin Small Letter t",
+      "ascii": "t",
+      "unicode": "U+0074"
+    },
+    "001202": {
+      "code": "001202",
+      "name": "Latin Small Letter u",
+      "ascii": "u",
+      "unicode": "U+0075"
+    },
+    "001210": {
+      "code": "001210",
+      "name": "Latin Small Letter v",
+      "ascii": "v",
+      "unicode": "U+0076"
+    },
+    "001211": {
+      "code": "001211",
+      "name": "Latin Small Letter w",
+      "ascii": "w",
+      "unicode": "U+0077"
+    },
+    "001212": {
+      "code": "001212",
+      "name": "Latin Small Letter x",
+      "ascii": "x",
+      "unicode": "U+0078"
+    },
+    "001220": {
+      "code": "001220",
+      "name": "Latin Small Letter y",
+      "ascii": "y",
+      "unicode": "U+0079"
+    },
+    "001221": {
+      "code": "001221",
+      "name": "Latin Small Letter z",
+      "ascii": "z",
+      "unicode": "U+007A"
+    },
+    "001222": {
+      "code": "001222",
+      "name": "Latin Capital Letter A",
+      "ascii": "A",
+      "unicode": "U+0041"
+    },
+    "002000": {
+      "code": "002000",
+      "name": "Latin Capital Letter B",
+      "ascii": "B",
+      "unicode": "U+0042"
+    },
+    "002001": {
+      "code": "002001",
+      "name": "Latin Capital Letter C",
+      "ascii": "C",
+      "unicode": "U+0043"
+    },
+    "002002": {
+      "code": "002002",
+      "name": "Latin Capital Letter D",
+      "ascii": "D",
+      "unicode": "U+0044"
+    },
+    "002010": {
+      "code": "002010",
+      "name": "Latin Capital Letter E",
+      "ascii": "E",
+      "unicode": "U+0045"
+    },
+    "002011": {
+      "code": "002011",
+      "name": "Latin Capital Letter F",
+      "ascii": "F",
+      "unicode": "U+0046"
+    },
+    "002012": {
+      "code": "002012",
+      "name": "Latin Capital Letter G",
+      "ascii": "G",
+      "unicode": "U+0047"
+    },
+    "002020": {
+      "code": "002020",
+      "name": "Latin Capital Letter H",
+      "ascii": "H",
+      "unicode": "U+0048"
+    },
+    "002021": {
+      "code": "002021",
+      "name": "Latin Capital Letter I",
+      "ascii": "I",
+      "unicode": "U+0049"
+    },
+    "002022": {
+      "code": "002022",
+      "name": "Latin Capital Letter J",
+      "ascii": "J",
+      "unicode": "U+004A"
+    },
+    "002100": {
+      "code": "002100",
+      "name": "Latin Capital Letter K",
+      "ascii": "K",
+      "unicode": "U+004B"
+    },
+    "002101": {
+      "code": "002101",
+      "name": "Latin Capital Letter L",
+      "ascii": "L",
+      "unicode": "U+004C"
+    },
+    "002102": {
+      "code": "002102",
+      "name": "Latin Capital Letter M",
+      "ascii": "M",
+      "unicode": "U+004D"
+    },
+    "002110": {
+      "code": "002110",
+      "name": "Latin Capital Letter N",
+      "ascii": "N",
+      "unicode": "U+004E"
+    },
+    "002111": {
+      "code": "002111",
+      "name": "Latin Capital Letter O",
+      "ascii": "O",
+      "unicode": "U+004F"
+    },
+    "002112": {
+      "code": "002112",
+      "name": "Latin Capital Letter P",
+      "ascii": "P",
+      "unicode": "U+0050"
+    },
+    "002120": {
+      "code": "002120",
+      "name": "Latin Capital Letter Q",
+      "ascii": "Q",
+      "unicode": "U+0051"
+    },
+    "002121": {
+      "code": "002121",
+      "name": "Latin Capital Letter R",
+      "ascii": "R",
+      "unicode": "U+0052"
+    },
+    "002122": {
+      "code": "002122",
+      "name": "Latin Capital Letter S",
+      "ascii": "S",
+      "unicode": "U+0053"
+    },
+    "002200": {
+      "code": "002200",
+      "name": "Latin Capital Letter T",
+      "ascii": "T",
+      "unicode": "U+0054"
+    },
+    "002201": {
+      "code": "002201",
+      "name": "Latin Capital Letter U",
+      "ascii": "U",
+      "unicode": "U+0055"
+    },
+    "002202": {
+      "code": "002202",
+      "name": "Latin Capital Letter V",
+      "ascii": "V",
+      "unicode": "U+0056"
+    },
+    "002210": {
+      "code": "002210",
+      "name": "Latin Capital Letter W",
+      "ascii": "W",
+      "unicode": "U+0057"
+    },
+    "002211": {
+      "code": "002211",
+      "name": "Latin Capital Letter X",
+      "ascii": "X",
+      "unicode": "U+0058"
+    },
+    "002212": {
+      "code": "002212",
+      "name": "Latin Capital Letter Y",
+      "ascii": "Y",
+      "unicode": "U+0059"
+    },
+    "002220": {
+      "code": "002220",
+      "name": "Latin Capital Letter Z",
+      "ascii": "Z",
+      "unicode": "U+005A"
+    },
+    "002221": {
+      "code": "002221",
+      "name": "Latin Capital Letter A with grave",
+      "unicode": "U+00C0"
+    },
+    "002222": {
+      "code": "002222",
+      "name": "Latin Capital Letter A with acute",
+      "unicode": "U+00C1"
+    },
+    "010000": {
+      "code": "010000",
+      "name": "Latin Capital Letter A with circumflex",
+      "unicode": "U+00C2"
+    },
+    "010001": {
+      "code": "010001",
+      "name": "Latin Capital Letter A with tilde",
+      "unicode": "U+00C3"
+    },
+    "010002": {
+      "code": "010002",
+      "name": "Latin Capital Letter A with diaeresis",
+      "unicode": "U+00C4"
+    },
+    "010010": {
+      "code": "010010",
+      "name": "Latin Capital Letter A with ring above",
+      "unicode": "U+00C5"
+    },
+    "010011": {
+      "code": "010011",
+      "name": "Latin Capital Letter AE",
+      "unicode": "U+00C6"
+    },
+    "010012": {
+      "code": "010012",
+      "name": "Latin Capital Letter C with cedilla",
+      "unicode": "U+00C7"
+    },
+    "010020": {
+      "code": "010020",
+      "name": "Latin Capital Letter E with grave",
+      "unicode": "U+00C8"
+    },
+    "010021": {
+      "code": "010021",
+      "name": "Latin Capital Letter E with acute",
+      "unicode": "U+00C9"
+    },
+    "010022": {
+      "code": "010022",
+      "name": "Latin Capital Letter E with circumflex",
+      "unicode": "U+00CA"
+    },
+    "010100": {
+      "code": "010100",
+      "name": "Latin Capital Letter E with diaeresis",
+      "unicode": "U+00CB"
+    },
+    "010101": {
+      "code": "010101",
+      "name": "Latin Capital Letter I with grave",
+      "unicode": "U+00CC"
+    },
+    "010102": {
+      "code": "010102",
+      "name": "Latin Capital Letter I with acute",
+      "unicode": "U+00CD"
+    },
+    "010110": {
+      "code": "010110",
+      "name": "Latin Capital Letter I with circumflex",
+      "unicode": "U+00CE"
+    },
+    "010111": {
+      "code": "010111",
+      "name": "Latin Capital Letter I with diaeresis",
+      "unicode": "U+00CF"
+    },
+    "010112": {
+      "code": "010112",
+      "name": "Latin Capital Letter ETH",
+      "unicode": "U+00D0"
+    },
+    "010120": {
+      "code": "010120",
+      "name": "Latin Capital Letter N with tilde",
+      "unicode": "U+00D1"
+    },
+    "010121": {
+      "code": "010121",
+      "name": "Latin Capital Letter O with grave",
+      "unicode": "U+00D2"
+    },
+    "010122": {
+      "code": "010122",
+      "name": "Latin Capital Letter O with acute",
+      "unicode": "U+00D3"
+    },
+    "010200": {
+      "code": "010200",
+      "name": "Latin Capital Letter O with circumflex",
+      "unicode": "U+00D4"
+    },
+    "010201": {
+      "code": "010201",
+      "name": "Latin Capital Letter O with tilde",
+      "unicode": "U+00D5"
+    },
+    "010202": {
+      "code": "010202",
+      "name": "Latin Capital Letter O with diaeresis",
+      "unicode": "U+00D6"
+    },
+    "010210": {
+      "code": "010210",
+      "name": "Latin Capital Letter O with stroke",
+      "unicode": "U+00D8"
+    },
+    "010211": {
+      "code": "010211",
+      "name": "Latin Capital Letter U with grave",
+      "unicode": "U+00D9"
+    },
+    "010212": {
+      "code": "010212",
+      "name": "Latin Capital Letter U with acute",
+      "unicode": "U+00DA"
+    },
+    "010220": {
+      "code": "010220",
+      "name": "Latin Capital Letter U with circumflex",
+      "unicode": "U+00DB"
+    },
+    "010221": {
+      "code": "010221",
+      "name": "Latin Capital Letter U with diaeresis",
+      "unicode": "U+00DC"
+    },
+    "010222": {
+      "code": "010222",
+      "name": "Latin Capital Letter Y with acute",
+      "unicode": "U+00DD"
+    },
+    "011000": {
+      "code": "011000",
+      "name": "Latin Capital Letter Thorn",
+      "unicode": "U+00DE"
+    },
+    "011001": {
+      "code": "011001",
+      "name": "Latin Small Letter Sharp S",
+      "unicode": "U+00DF"
+    },
+    "011002": {
+      "code": "011002",
+      "name": "Latin Small Letter a with grave",
+      "unicode": "U+00E0"
+    },
+    "011010": {
+      "code": "011010",
+      "name": "Latin Small Letter a with acute",
+      "unicode": "U+00E1"
+    },
+    "011011": {
+      "code": "011011",
+      "name": "Latin Small Letter a with circumflex",
+      "unicode": "U+00E2"
+    },
+    "011012": {
+      "code": "011012",
+      "name": "Latin Small Letter a with tilde",
+      "unicode": "U+00E3"
+    },
+    "011020": {
+      "code": "011020",
+      "name": "Latin Small Letter a with diaeresis",
+      "unicode": "U+00E4"
+    },
+    "011021": {
+      "code": "011021",
+      "name": "Latin Small Letter a with ring above",
+      "unicode": "U+00E5"
+    },
+    "011022": {
+      "code": "011022",
+      "name": "Latin Small Letter ae",
+      "unicode": "U+00E6"
+    },
+    "011100": {
+      "code": "011100",
+      "name": "Latin Small Letter c with cedilla",
+      "unicode": "U+00E7"
+    },
+    "011101": {
+      "code": "011101",
+      "name": "Latin Small Letter e with grave",
+      "unicode": "U+00E8"
+    },
+    "011102": {
+      "code": "011102",
+      "name": "Latin Small Letter e with acute",
+      "unicode": "U+00E9"
+    },
+    "011110": {
+      "code": "011110",
+      "name": "Latin Small Letter e with circumflex",
+      "unicode": "U+00EA"
+    },
+    "011111": {
+      "code": "011111",
+      "name": "Latin Small Letter e with diaeresis",
+      "unicode": "U+00EB"
+    },
+    "011112": {
+      "code": "011112",
+      "name": "Latin Small Letter i with grave",
+      "unicode": "U+00EC"
+    },
+    "011120": {
+      "code": "011120",
+      "name": "Latin Small Letter i with acute",
+      "unicode": "U+00ED"
+    },
+    "011121": {
+      "code": "011121",
+      "name": "Latin Small Letter i with circumflex",
+      "unicode": "U+00EE"
+    },
+    "011122": {
+      "code": "011122",
+      "name": "Latin Small Letter i with diaeresis",
+      "unicode": "U+00EF"
+    },
+    "011200": {
+      "code": "011200",
+      "name": "Latin Small Letter eth",
+      "unicode": "U+00F0"
+    },
+    "011201": {
+      "code": "011201",
+      "name": "Latin Small Letter n with tilde",
+      "unicode": "U+00F1"
+    },
+    "011202": {
+      "code": "011202",
+      "name": "Latin Small Letter o with grave",
+      "unicode": "U+00F2"
+    },
+    "011210": {
+      "code": "011210",
+      "name": "Latin Small Letter o with acute",
+      "unicode": "U+00F3"
+    },
+    "011211": {
+      "code": "011211",
+      "name": "Latin Small Letter o with circumflex",
+      "unicode": "U+00F4"
+    },
+    "011212": {
+      "code": "011212",
+      "name": "Latin Small Letter o with tilde",
+      "unicode": "U+00F5"
+    },
+    "011220": {
+      "code": "011220",
+      "name": "Latin Small Letter o with diaeresis",
+      "unicode": "U+00F6"
+    },
+    "011221": {
+      "code": "011221",
+      "name": "Latin Small Letter o with stroke",
+      "unicode": "U+00F8"
+    },
+    "011222": {
+      "code": "011222",
+      "name": "Latin Small Letter u with grave",
+      "unicode": "U+00F9"
+    },
+    "012000": {
+      "code": "012000",
+      "name": "Latin Small Letter u with acute",
+      "unicode": "U+00FA"
+    },
+    "012001": {
+      "code": "012001",
+      "name": "Latin Small Letter u with circumflex",
+      "unicode": "U+00FB"
+    },
+    "012002": {
+      "code": "012002",
+      "name": "Latin Small Letter u with diaeresis",
+      "unicode": "U+00FC"
+    },
+    "012010": {
+      "code": "012010",
+      "name": "Latin Small Letter y with acute",
+      "unicode": "U+00FD"
+    },
+    "012011": {
+      "code": "012011",
+      "name": "Latin Small Letter thorn",
+      "unicode": "U+00FE"
+    },
+    "012012": {
+      "code": "012012",
+      "name": "Latin Small Letter y with diaeresis",
+      "unicode": "U+00FF"
+    },
+    "012020": {
+      "code": "012020",
+      "name": "Latin Capital Letter A with macron",
+      "unicode": "U+0100"
+    },
+    "012021": {
+      "code": "012021",
+      "name": "Latin Small Letter a with macron",
+      "unicode": "U+0101"
+    },
+    "012022": {
+      "code": "012022",
+      "name": "Latin Capital Letter A with breve",
+      "unicode": "U+0102"
+    },
+    "012100": {
+      "code": "012100",
+      "name": "Latin Small Letter a with breve",
+      "unicode": "U+0103"
+    },
+    "012101": {
+      "code": "012101",
+      "name": "Latin Capital Letter A with ogonek",
+      "unicode": "U+0104"
+    },
+    "012102": {
+      "code": "012102",
+      "name": "Latin Small Letter a with ogonek",
+      "unicode": "U+0105"
+    },
+    "012110": {
+      "code": "012110",
+      "name": "Latin Capital Letter C with acute",
+      "unicode": "U+0106"
+    },
+    "012111": {
+      "code": "012111",
+      "name": "Latin Small Letter c with acute",
+      "unicode": "U+0107"
+    },
+    "012112": {
+      "code": "012112",
+      "name": "Latin Capital Letter C with circumflex",
+      "unicode": "U+0108"
+    },
+    "012120": {
+      "code": "012120",
+      "name": "Latin Small Letter c with circumflex",
+      "unicode": "U+0109"
+    },
+    "012121": {
+      "code": "012121",
+      "name": "Latin Capital Letter C with dot above",
+      "unicode": "U+010A"
+    },
+    "012122": {
+      "code": "012122",
+      "name": "Latin Small Letter c with dot above",
+      "unicode": "U+010B"
+    },
+    "012200": {
+      "code": "012200",
+      "name": "Latin Capital Letter C with caron",
+      "unicode": "U+010C"
+    },
+    "012201": {
+      "code": "012201",
+      "name": "Latin Small Letter c with caron",
+      "unicode": "U+010D"
+    },
+    "012202": {
+      "code": "012202",
+      "name": "Latin Capital Letter D with caron",
+      "unicode": "U+010E"
+    },
+    "012210": {
+      "code": "012210",
+      "name": "Latin Small Letter d with caron",
+      "unicode": "U+010F"
+    },
+    "012211": {
+      "code": "012211",
+      "name": "Latin Capital Letter D with stroke",
+      "unicode": "U+0110"
+    },
+    "012212": {
+      "code": "012212",
+      "name": "Latin Small Letter d with stroke",
+      "unicode": "U+0111"
+    },
+    "012220": {
+      "code": "012220",
+      "name": "Latin Capital Letter E with macron",
+      "unicode": "U+0112"
+    },
+    "012221": {
+      "code": "012221",
+      "name": "Latin Small Letter e with macron",
+      "unicode": "U+0113"
+    },
+    "012222": {
+      "code": "012222",
+      "name": "Latin Capital Letter E with breve",
+      "unicode": "U+0114"
+    },
+    "020000": {
+      "code": "020000",
+      "name": "Latin Small Letter e with breve",
+      "unicode": "U+0115"
+    },
+    "020001": {
+      "code": "020001",
+      "name": "Latin Capital Letter E with dot above",
+      "unicode": "U+0116"
+    },
+    "020002": {
+      "code": "020002",
+      "name": "Latin Small Letter e with dot above",
+      "unicode": "U+0117"
+    },
+    "020010": {
+      "code": "020010",
+      "name": "Latin Capital Letter E with ogonek",
+      "unicode": "U+0118"
+    },
+    "020011": {
+      "code": "020011",
+      "name": "Latin Small Letter e with ogonek",
+      "unicode": "U+0119"
+    },
+    "020012": {
+      "code": "020012",
+      "name": "Latin Capital Letter E with caron",
+      "unicode": "U+011A"
+    },
+    "020020": {
+      "code": "020020",
+      "name": "Latin Small Letter e with caron",
+      "unicode": "U+011B"
+    },
+    "020021": {
+      "code": "020021",
+      "name": "Latin Capital Letter G with circumflex",
+      "unicode": "U+011C"
+    },
+    "020022": {
+      "code": "020022",
+      "name": "Latin Small Letter g with circumflex",
+      "unicode": "U+011D"
+    },
+    "020100": {
+      "code": "020100",
+      "name": "Latin Capital Letter G with breve",
+      "unicode": "U+011E"
+    },
+    "020101": {
+      "code": "020101",
+      "name": "Latin Small Letter g with breve",
+      "unicode": "U+011F"
+    },
+    "020102": {
+      "code": "020102",
+      "name": "Latin Capital Letter G with dot above",
+      "unicode": "U+0120"
+    },
+    "020110": {
+      "code": "020110",
+      "name": "Latin Small Letter g with dot above",
+      "unicode": "U+0121"
+    },
+    "020111": {
+      "code": "020111",
+      "name": "Latin Capital Letter G with cedilla",
+      "unicode": "U+0122"
+    },
+    "020112": {
+      "code": "020112",
+      "name": "Latin Small Letter g with cedilla",
+      "unicode": "U+0123"
+    },
+    "020120": {
+      "code": "020120",
+      "name": "Latin Capital Letter H with circumflex",
+      "unicode": "U+0124"
+    },
+    "020121": {
+      "code": "020121",
+      "name": "Latin Small Letter h with circumflex",
+      "unicode": "U+0125"
+    },
+    "020122": {
+      "code": "020122",
+      "name": "Latin Capital Letter H with stroke",
+      "unicode": "U+0126"
+    },
+    "020200": {
+      "code": "020200",
+      "name": "Latin Small Letter h with stroke",
+      "unicode": "U+0127"
+    },
+    "020201": {
+      "code": "020201",
+      "name": "Latin Capital Letter I with tilde",
+      "unicode": "U+0128"
+    },
+    "020202": {
+      "code": "020202",
+      "name": "Latin Small Letter i with tilde",
+      "unicode": "U+0129"
+    },
+    "020210": {
+      "code": "020210",
+      "name": "Latin Capital Letter I with macron",
+      "unicode": "U+012A"
+    },
+    "020211": {
+      "code": "020211",
+      "name": "Latin Small Letter i with macron",
+      "unicode": "U+012B"
+    },
+    "020212": {
+      "code": "020212",
+      "name": "Latin Capital Letter I with breve",
+      "unicode": "U+012C"
+    },
+    "020220": {
+      "code": "020220",
+      "name": "Latin Small Letter i with breve",
+      "unicode": "U+012D"
+    },
+    "020221": {
+      "code": "020221",
+      "name": "Latin Capital Letter I with ogonek",
+      "unicode": "U+012E"
+    },
+    "020222": {
+      "code": "020222",
+      "name": "Latin Small Letter i with ogonek",
+      "unicode": "U+012F"
+    },
+    "021000": {
+      "code": "021000",
+      "name": "Latin Capital Letter I with dot above",
+      "unicode": "U+0130"
+    },
+    "021001": {
+      "code": "021001",
+      "name": "Latin Small Letter dotless i",
+      "unicode": "U+0131"
+    },
+    "021002": {
+      "code": "021002",
+      "name": "Latin Capital Ligature IJ",
+      "unicode": "U+0132"
+    },
+    "021010": {
+      "code": "021010",
+      "name": "Latin Small Ligature ij",
+      "unicode": "U+0133"
+    },
+    "021011": {
+      "code": "021011",
+      "name": "Latin Capital Letter J with circumflex",
+      "unicode": "U+0134"
+    },
+    "021012": {
+      "code": "021012",
+      "name": "Latin Small Letter j with circumflex",
+      "unicode": "U+0135"
+    },
+    "021020": {
+      "code": "021020",
+      "name": "Latin Capital Letter K with cedilla",
+      "unicode": "U+0136"
+    },
+    "021021": {
+      "code": "021021",
+      "name": "Latin Small Letter k with cedilla",
+      "unicode": "U+0137"
+    },
+    "021022": {
+      "code": "021022",
+      "name": "Latin Small Letter kra",
+      "unicode": "U+0138"
+    },
+    "021100": {
+      "code": "021100",
+      "name": "Latin Capital Letter L with acute",
+      "unicode": "U+0139"
+    },
+    "021101": {
+      "code": "021101",
+      "name": "Latin Small Letter l with acute",
+      "unicode": "U+013A"
+    },
+    "021102": {
+      "code": "021102",
+      "name": "Latin Capital Letter L with cedilla",
+      "unicode": "U+013B"
+    },
+    "021110": {
+      "code": "021110",
+      "name": "Latin Small Letter l with cedilla",
+      "unicode": "U+013C"
+    },
+    "021111": {
+      "code": "021111",
+      "name": "Latin Capital Letter L with caron",
+      "unicode": "U+013D"
+    },
+    "021112": {
+      "code": "021112",
+      "name": "Latin Small Letter l with caron",
+      "unicode": "U+013E"
+    },
+    "021120": {
+      "code": "021120",
+      "name": "Latin Capital Letter L with middle dot",
+      "unicode": "U+013F"
+    },
+    "021121": {
+      "code": "021121",
+      "name": "Latin Small Letter l with middle dot",
+      "unicode": "U+0140"
+    },
+    "021122": {
+      "code": "021122",
+      "name": "Latin Capital Letter L with stroke",
+      "unicode": "U+0141"
+    },
+    "021200": {
+      "code": "021200",
+      "name": "Latin Small Letter l with stroke",
+      "unicode": "U+0142"
+    },
+    "021201": {
+      "code": "021201",
+      "name": "Latin Capital Letter N with acute",
+      "unicode": "U+0143"
+    },
+    "021202": {
+      "code": "021202",
+      "name": "Latin Small Letter n with acute",
+      "unicode": "U+0144"
+    },
+    "021210": {
+      "code": "021210",
+      "name": "Latin Capital Letter N with cedilla",
+      "unicode": "U+0145"
+    },
+    "021211": {
+      "code": "021211",
+      "name": "Latin Small Letter n with cedilla",
+      "unicode": "U+0146"
+    },
+    "021212": {
+      "code": "021212",
+      "name": "Latin Capital Letter N with caron",
+      "unicode": "U+0147"
+    },
+    "021220": {
+      "code": "021220",
+      "name": "Latin Small Letter n with caron",
+      "unicode": "U+0148"
+    },
+    "021221": {
+      "code": "021221",
+      "name": "Latin Small Letter n preceded by apostrophe",
+      "unicode": "U+0149"
+    },
+    "021222": {
+      "code": "021222",
+      "name": "Latin Capital Letter ENG",
+      "unicode": "U+014A"
+    },
+    "022000": {
+      "code": "022000",
+      "name": "Latin Small Letter eng",
+      "unicode": "U+014B"
+    },
+    "022001": {
+      "code": "022001",
+      "name": "Latin Capital Letter O with macron",
+      "unicode": "U+014C"
+    },
+    "022002": {
+      "code": "022002",
+      "name": "Latin Small Letter o with macron",
+      "unicode": "U+014D"
+    },
+    "022010": {
+      "code": "022010",
+      "name": "Latin Capital Letter O with breve",
+      "unicode": "U+014E"
+    },
+    "022011": {
+      "code": "022011",
+      "name": "Latin Small Letter o with breve",
+      "unicode": "U+014F"
+    },
+    "022012": {
+      "code": "022012",
+      "name": "Latin Capital Letter O with double acute",
+      "unicode": "U+0150"
+    },
+    "022020": {
+      "code": "022020",
+      "name": "Latin Small Letter o with double acute",
+      "unicode": "U+0151"
+    },
+    "022021": {
+      "code": "022021",
+      "name": "Latin Capital Ligature OE",
+      "unicode": "U+0152"
+    },
+    "022022": {
+      "code": "022022",
+      "name": "Latin Small Ligature OE",
+      "unicode": "U+0153"
+    },
+    "022100": {
+      "code": "022100",
+      "name": "Latin Capital Letter R with acute",
+      "unicode": "U+0154"
+    },
+    "022101": {
+      "code": "022101",
+      "name": "Latin Small Letter r with acute",
+      "unicode": "U+0155"
+    },
+    "022102": {
+      "code": "022102",
+      "name": "Latin Capital Letter R with cedilla",
+      "unicode": "U+0156"
+    },
+    "022110": {
+      "code": "022110",
+      "name": "Latin Small Letter r with cedilla",
+      "unicode": "U+0157"
+    },
+    "022111": {
+      "code": "022111",
+      "name": "Latin Capital Letter R with caron",
+      "unicode": "U+0158"
+    },
+    "022112": {
+      "code": "022112",
+      "name": "Latin Small Letter r with caron",
+      "unicode": "U+0159"
+    },
+    "022120": {
+      "code": "022120",
+      "name": "Latin Capital Letter S with acute",
+      "unicode": "U+015A"
+    },
+    "022121": {
+      "code": "022121",
+      "name": "Latin Small Letter s with acute",
+      "unicode": "U+015B"
+    },
+    "022122": {
+      "code": "022122",
+      "name": "Latin Capital Letter S with circumflex",
+      "unicode": "U+015C"
+    },
+    "022200": {
+      "code": "022200",
+      "name": "Latin Small Letter s with circumflex",
+      "unicode": "U+015D"
+    },
+    "022201": {
+      "code": "022201",
+      "name": "Latin Capital Letter S with cedilla",
+      "unicode": "U+015E"
+    },
+    "022202": {
+      "code": "022202",
+      "name": "Latin Small Letter s with cedilla",
+      "unicode": "U+015F"
+    },
+    "022210": {
+      "code": "022210",
+      "name": "Latin Capital Letter S with caron",
+      "unicode": "U+0160"
+    },
+    "022211": {
+      "code": "022211",
+      "name": "Latin Small Letter s with caron",
+      "unicode": "U+0161"
+    },
+    "022212": {
+      "code": "022212",
+      "name": "Latin Capital Letter T with cedilla",
+      "unicode": "U+0162"
+    },
+    "022220": {
+      "code": "022220",
+      "name": "Latin Small Letter t with cedilla",
+      "unicode": "U+0163"
+    },
+    "022221": {
+      "code": "022221",
+      "name": "Latin Capital Letter T with caron",
+      "unicode": "U+0164"
+    },
+    "022222": {
+      "code": "022222",
+      "name": "Latin Small Letter t with caron",
+      "unicode": "U+0165"
+    },
+    "100000": {
+      "code": "100000",
+      "name": "Latin Capital Letter T with stroke",
+      "unicode": "U+0166"
+    },
+    "100001": {
+      "code": "100001",
+      "name": "Latin Small Letter t with stroke",
+      "unicode": "U+0167"
+    },
+    "100002": {
+      "code": "100002",
+      "name": "Latin Capital Letter U with tilde",
+      "unicode": "U+0168"
+    },
+    "100010": {
+      "code": "100010",
+      "name": "Latin Small Letter u with tilde",
+      "unicode": "U+0169"
+    },
+    "100011": {
+      "code": "100011",
+      "name": "Latin Capital Letter U with macron",
+      "unicode": "U+016A"
+    },
+    "100012": {
+      "code": "100012",
+      "name": "Latin Small Letter u with macron",
+      "unicode": "U+016B"
+    },
+    "100020": {
+      "code": "100020",
+      "name": "Latin Capital Letter U with breve",
+      "unicode": "U+016C"
+    },
+    "100021": {
+      "code": "100021",
+      "name": "Latin Small Letter u with breve",
+      "unicode": "U+016D"
+    },
+    "100022": {
+      "code": "100022",
+      "name": "Latin Capital Letter U with ring above",
+      "unicode": "U+016E"
+    },
+    "100100": {
+      "code": "100100",
+      "name": "Latin Small Letter u with ring above",
+      "unicode": "U+016F"
+    },
+    "100101": {
+      "code": "100101",
+      "name": "Latin Capital Letter U with double acute",
+      "unicode": "U+0170"
+    },
+    "100102": {
+      "code": "100102",
+      "name": "Latin Small Letter u with double acute",
+      "unicode": "U+0171"
+    },
+    "100110": {
+      "code": "100110",
+      "name": "Latin Capital Letter U with ogonek",
+      "unicode": "U+0172"
+    },
+    "100111": {
+      "code": "100111",
+      "name": "Latin Small Letter u with ogonek",
+      "unicode": "U+0173"
+    },
+    "100112": {
+      "code": "100112",
+      "name": "Latin Capital Letter W with circumflex",
+      "unicode": "U+0174"
+    },
+    "100120": {
+      "code": "100120",
+      "name": "Latin Small Letter w with circumflex",
+      "unicode": "U+0175"
+    },
+    "100121": {
+      "code": "100121",
+      "name": "Latin Capital Letter Y with circumflex",
+      "unicode": "U+0176"
+    },
+    "100122": {
+      "code": "100122",
+      "name": "Latin Small Letter y with circumflex",
+      "unicode": "U+0177"
+    },
+    "100200": {
+      "code": "100200",
+      "name": "Latin Capital Letter Y with diaeresis",
+      "unicode": "U+0178"
+    },
+    "100201": {
+      "code": "100201",
+      "name": "Latin Capital Letter Z with acute",
+      "unicode": "U+0179"
+    },
+    "100202": {
+      "code": "100202",
+      "name": "Latin Small Letter z with acute",
+      "unicode": "U+017A"
+    },
+    "100210": {
+      "code": "100210",
+      "name": "Latin Capital Letter Z with dot above",
+      "unicode": "U+017B"
+    },
+    "100211": {
+      "code": "100211",
+      "name": "Latin Small Letter z with dot above",
+      "unicode": "U+017C"
+    },
+    "100212": {
+      "code": "100212",
+      "name": "Latin Capital Letter Z with caron",
+      "unicode": "U+017D"
+    },
+    "100220": {
+      "code": "100220",
+      "name": "Latin Small Letter z with caron",
+      "unicode": "U+017E"
+    },
+    "100221": {
+      "code": "100221",
+      "name": "Latin Small Letter Long S",
+      "unicode": "U+017F"
+    },
+    "100222": {
+      "code": "100222",
+      "name": "Digit Zero (0)",
+      "ascii": "0",
+      "unicode": "U+0030"
+    },
+    "101000": {
+      "code": "101000",
+      "name": "Digit One (1)",
+      "ascii": "1",
+      "unicode": "U+0031"
+    },
+    "101001": {
+      "code": "101001",
+      "name": "Digit Two (2)",
+      "ascii": "2",
+      "unicode": "U+0032"
+    },
+    "101002": {
+      "code": "101002",
+      "name": "Digit Three (3)",
+      "ascii": "3",
+      "unicode": "U+0033"
+    },
+    "101010": {
+      "code": "101010",
+      "name": "Digit Four (4)",
+      "ascii": "4",
+      "unicode": "U+0034"
+    },
+    "101011": {
+      "code": "101011",
+      "name": "Digit Five (5)",
+      "ascii": "5",
+      "unicode": "U+0035"
+    },
+    "101012": {
+      "code": "101012",
+      "name": "Digit Six (6)",
+      "ascii": "6",
+      "unicode": "U+0036"
+    },
+    "101020": {
+      "code": "101020",
+      "name": "Digit Seven (7)",
+      "ascii": "7",
+      "unicode": "U+0037"
+    },
+    "101021": {
+      "code": "101021",
+      "name": "Digit Eight (8)",
+      "ascii": "8",
+      "unicode": "U+0038"
+    },
+    "101022": {
+      "code": "101022",
+      "name": "Digit Nine (9)",
+      "ascii": "9",
+      "unicode": "U+0039"
+    },
+    "101100": {
+      "code": "101100",
+      "name": "Space",
+      "ascii": " ",
+      "unicode": "U+0020"
+    },
+    "101101": {
+      "code": "101101",
+      "name": "Exclamation Mark",
+      "ascii": "!",
+      "unicode": "U+0021"
+    },
+    "101102": {
+      "code": "101102",
+      "name": "Quotation Mark",
+      "ascii": "\"",
+      "unicode": "U+0022"
+    },
+    "101110": {
+      "code": "101110",
+      "name": "Number Sign",
+      "ascii": "#",
+      "unicode": "U+0023"
+    },
+    "101111": {
+      "code": "101111",
+      "name": "Dollar Sign",
+      "ascii": "$",
+      "unicode": "U+0024"
+    },
+    "101112": {
+      "code": "101112",
+      "name": "Percent Sign",
+      "ascii": "%",
+      "unicode": "U+0025"
+    },
+    "101120": {
+      "code": "101120",
+      "name": "Ampersand",
+      "ascii": "&",
+      "unicode": "U+0026"
+    },
+    "101121": {
+      "code": "101121",
+      "name": "Apostrophe",
+      "ascii": "'",
+      "unicode": "U+0027"
+    },
+    "101122": {
+      "code": "101122",
+      "name": "Left Parenthesis",
+      "ascii": "(",
+      "unicode": "U+0028"
+    },
+    "101200": {
+      "code": "101200",
+      "name": "Right Parenthesis",
+      "ascii": ")",
+      "unicode": "U+0029"
+    },
+    "101201": {
+      "code": "101201",
+      "name": "Asterisk",
+      "ascii": "*",
+      "unicode": "U+002A"
+    },
+    "101202": {
+      "code": "101202",
+      "name": "Plus Sign",
+      "ascii": "+",
+      "unicode": "U+002B"
+    },
+    "101210": {
+      "code": "101210",
+      "name": "Comma",
+      "ascii": ",",
+      "unicode": "U+002C"
+    },
+    "101211": {
+      "code": "101211",
+      "name": "Hyphen-Minus",
+      "ascii": "-",
+      "unicode": "U+002D"
+    },
+    "101212": {
+      "code": "101212",
+      "name": "Full Stop",
+      "ascii": ".",
+      "unicode": "U+002E"
+    },
+    "101220": {
+      "code": "101220",
+      "name": "Solidus (Slash)",
+      "ascii": "/",
+      "unicode": "U+002F"
+    },
+    "101221": {
+      "code": "101221",
+      "name": "Colon",
+      "ascii": ":",
+      "unicode": "U+003A"
+    },
+    "101222": {
+      "code": "101222",
+      "name": "Semicolon",
+      "ascii": ";",
+      "unicode": "U+003B"
+    },
+    "102000": {
+      "code": "102000",
+      "name": "Less-Than Sign",
+      "ascii": "<",
+      "unicode": "U+003C"
+    },
+    "102001": {
+      "code": "102001",
+      "name": "Equals Sign",
+      "ascii": "=",
+      "unicode": "U+003D"
+    },
+    "102002": {
+      "code": "102002",
+      "name": "Greater-Than Sign",
+      "ascii": ">",
+      "unicode": "U+003E"
+    },
+    "102010": {
+      "code": "102010",
+      "name": "Question Mark",
+      "ascii": "?",
+      "unicode": "U+003F"
+    },
+    "102011": {
+      "code": "102011",
+      "name": "Commercial At",
+      "ascii": "@",
+      "unicode": "U+0040"
+    },
+    "102012": {
+      "code": "102012",
+      "name": "Left Square Bracket",
+      "ascii": "[",
+      "unicode": "U+005B"
+    },
+    "102020": {
+      "code": "102020",
+      "name": "Reverse Solidus",
+      "ascii": "\\",
+      "unicode": "U+005C"
+    },
+    "102021": {
+      "code": "102021",
+      "name": "Right Square Bracket",
+      "ascii": "]",
+      "unicode": "U+005D"
+    },
+    "102022": {
+      "code": "102022",
+      "name": "Circumflex Accent",
+      "ascii": "^",
+      "unicode": "U+005E"
+    },
+    "102100": {
+      "code": "102100",
+      "name": "Low Line",
+      "ascii": "_",
+      "unicode": "U+005F"
+    },
+    "102101": {
+      "code": "102101",
+      "name": "Grave Accent",
+      "ascii": "`",
+      "unicode": "U+0060"
+    },
+    "102102": {
+      "code": "102102",
+      "name": "Left Curly Bracket",
+      "ascii": "{",
+      "unicode": "U+007B"
+    },
+    "102110": {
+      "code": "102110",
+      "name": "Vertical Line",
+      "ascii": "|",
+      "unicode": "U+007C"
+    },
+    "102111": {
+      "code": "102111",
+      "name": "Right Curly Bracket",
+      "ascii": "}",
+      "unicode": "U+007D"
+    },
+    "102112": {
+      "code": "102112",
+      "name": "Tilde",
+      "ascii": "~",
+      "unicode": "U+007E"
+    },
+    "102120": {
+      "code": "102120",
+      "name": "Rightwards Arrow",
+      "ascii": null,
+      "unicode": "U+2192"
+    },
+    "102121": {
+      "code": "102121",
+      "name": "Leftwards Arrow",
+      "ascii": null,
+      "unicode": "U+2190"
+    },
+    "102122": {
+      "code": "102122",
+      "name": "Upwards Arrow",
+      "ascii": null,
+      "unicode": "U+2191"
+    },
+    "102200": {
+      "code": "102200",
+      "name": "Downwards Arrow",
+      "ascii": null,
+      "unicode": "U+2193"
+    },
+    "102201": {
+      "code": "102201",
+      "name": "Bullet",
+      "ascii": null,
+      "unicode": "U+2022"
+    },
+    "102202": {
+      "code": "102202",
+      "name": "Degree Sign",
+      "ascii": null,
+      "unicode": "U+00B0"
+    },
+    "102210": {
+      "code": "102210",
+      "name": "Plus-Minus Sign",
+      "ascii": null,
+      "unicode": "U+00B1"
+    },
+    "102211": {
+      "code": "102211",
+      "name": "Not Equal To",
+      "ascii": null,
+      "unicode": "U+2260"
+    },
+    "102212": {
+      "code": "102212",
+      "name": "Multiplication Sign",
+      "unicode": "U+00D7"
+    },
+    "102220": {
+      "code": "102220",
+      "name": "Division Sign",
+      "unicode": "U+00F7"
+    },
+    "102221": {
+      "code": "102221",
+      "name": "Less-Than or Equal To",
+      "unicode": "U+2264"
+    },
+    "102222": {
+      "code": "102222",
+      "name": "Greater-Than or Equal To",
+      "unicode": "U+2265"
+    },
+    "110000": {
+      "code": "110000",
+      "name": "Approximately Equal To",
+      "unicode": "U+2248"
+    },
+    "110001": {
+      "code": "110001",
+      "name": "Identical To",
+      "unicode": "U+2261"
+    },
+    "110002": {
+      "code": "110002",
+      "name": "Square Root",
+      "unicode": "U+221A"
+    },
+    "110010": {
+      "code": "110010",
+      "name": "Infinity",
+      "unicode": "U+221E"
+    },
+    "110011": {
+      "code": "110011",
+      "name": "Integral",
+      "unicode": "U+222B"
+    },
+    "110012": {
+      "code": "110012",
+      "name": "Partial Differential",
+      "unicode": "U+2202"
+    },
+    "110020": {
+      "code": "110020",
+      "name": "N-ary Summation",
+      "unicode": "U+2211"
+    },
+    "110021": {
+      "code": "110021",
+      "name": "N-ary Product",
+      "unicode": "U+220F"
+    },
+    "110022": {
+      "code": "110022",
+      "name": "Increment",
+      "unicode": "U+2206"
+    },
+    "110100": {
+      "code": "110100",
+      "name": "Greek Small Letter Pi",
+      "unicode": "U+03C0"
+    },
+    "110101": {
+      "code": "110101",
+      "name": "Logical AND",
+      "unicode": "U+2227"
+    },
+    "110102": {
+      "code": "110102",
+      "name": "Logical OR",
+      "unicode": "U+2228"
+    },
+    "110110": {
+      "code": "110110",
+      "name": "Logical NOT",
+      "unicode": "U+00AC"
+    },
+    "110111": {
+      "code": "110111",
+      "name": "For All",
+      "unicode": "U+2200"
+    },
+    "110112": {
+      "code": "110112",
+      "name": "There Exists",
+      "unicode": "U+2203"
+    },
+    "110120": {
+      "code": "110120",
+      "name": "Empty Set",
+      "unicode": "U+2205"
+    },
+    "110121": {
+      "code": "110121",
+      "name": "Element Of",
+      "unicode": "U+2208"
+    },
+    "110122": {
+      "code": "110122",
+      "name": "Not An Element Of",
+      "unicode": "U+2209"
+    },
+    "110200": {
+      "code": "110200",
+      "name": "Intersection",
+      "unicode": "U+2229"
+    },
+    "110201": {
+      "code": "110201",
+      "name": "Union",
+      "unicode": "U+222A"
+    },
+    "110202": {
+      "code": "110202",
+      "name": "Subset Of",
+      "unicode": "U+2282"
+    },
+    "110210": {
+      "code": "110210",
+      "name": "Subset Of Or Equal To",
+      "unicode": "U+2286"
+    },
+    "110211": {
+      "code": "110211",
+      "name": "Therefore",
+      "unicode": "U+2234"
+    },
+    "110212": {
+      "code": "110212",
+      "name": "Because",
+      "unicode": "U+2235"
+    },
+    "110220": {
+      "code": "110220",
+      "name": "Proportional To",
+      "unicode": "U+221D"
+    },
+    "110221": {
+      "code": "110221",
+      "name": "Much Less-Than",
+      "unicode": "U+226A"
+    },
+    "110222": {
+      "code": "110222",
+      "name": "Much Greater-Than",
+      "unicode": "U+226B"
+    }
+  },
+  "categories": [
+    {
+      "name": "Control Codes",
+      "level": 2,
+      "description": "Control codes occupy the first few positions in the character set. They are used for signaling and text formatting rather than representing graphic symbols.",
+      "items": [
+        "000000",
+        "000001",
+        "000002",
+        "000010",
+        "000011",
+        "000012",
+        "000020",
+        "000021",
+        "000022",
+        "000100",
+        "000101"
+      ]
+    },
+    {
+      "name": "Graphic Characters",
+      "level": 2,
+      "description": "",
+      "items": []
+    },
+    {
+      "name": "Latin Letters",
+      "level": 3,
+      "description": "",
+      "items": [
+        "001000",
+        "001001",
+        "001002",
+        "001010",
+        "001011",
+        "001012",
+        "001020",
+        "001021",
+        "001022",
+        "001100",
+        "001101",
+        "001102",
+        "001110",
+        "001111",
+        "001112",
+        "001120",
+        "001121",
+        "001122",
+        "001200",
+        "001201",
+        "001202",
+        "001210",
+        "001211",
+        "001212",
+        "001220",
+        "001221",
+        "001222",
+        "002000",
+        "002001",
+        "002002",
+        "002010",
+        "002011",
+        "002012",
+        "002020",
+        "002021",
+        "002022",
+        "002100",
+        "002101",
+        "002102",
+        "002110",
+        "002111",
+        "002112",
+        "002120",
+        "002121",
+        "002122",
+        "002200",
+        "002201",
+        "002202",
+        "002210",
+        "002211",
+        "002212",
+        "002220"
+      ]
+    },
+    {
+      "name": "Extended Latin",
+      "level": 3,
+      "description": "",
+      "items": [
+        "002221",
+        "002222",
+        "010000",
+        "010001",
+        "010002",
+        "010010",
+        "010011",
+        "010012",
+        "010020",
+        "010021",
+        "010022",
+        "010100",
+        "010101",
+        "010102",
+        "010110",
+        "010111",
+        "010112",
+        "010120",
+        "010121",
+        "010122",
+        "010200",
+        "010201",
+        "010202",
+        "010210",
+        "010211",
+        "010212",
+        "010220",
+        "010221",
+        "010222",
+        "011000",
+        "011001",
+        "011002",
+        "011010",
+        "011011",
+        "011012",
+        "011020",
+        "011021",
+        "011022",
+        "011100",
+        "011101",
+        "011102",
+        "011110",
+        "011111",
+        "011112",
+        "011120",
+        "011121",
+        "011122",
+        "011200",
+        "011201",
+        "011202",
+        "011210",
+        "011211",
+        "011212",
+        "011220",
+        "011221",
+        "011222",
+        "012000",
+        "012001",
+        "012002",
+        "012010",
+        "012011",
+        "012012",
+        "012020",
+        "012021",
+        "012022",
+        "012100",
+        "012101",
+        "012102",
+        "012110",
+        "012111",
+        "012112",
+        "012120",
+        "012121",
+        "012122",
+        "012200",
+        "012201",
+        "012202",
+        "012210",
+        "012211",
+        "012212",
+        "012220",
+        "012221",
+        "012222",
+        "020000",
+        "020001",
+        "020002",
+        "020010",
+        "020011",
+        "020012",
+        "020020",
+        "020021",
+        "020022",
+        "020100",
+        "020101",
+        "020102",
+        "020110",
+        "020111",
+        "020112",
+        "020120",
+        "020121",
+        "020122",
+        "020200",
+        "020201",
+        "020202",
+        "020210",
+        "020211",
+        "020212",
+        "020220",
+        "020221",
+        "020222",
+        "021000",
+        "021001",
+        "021002",
+        "021010",
+        "021011",
+        "021012",
+        "021020",
+        "021021",
+        "021022",
+        "021100",
+        "021101",
+        "021102",
+        "021110",
+        "021111",
+        "021112",
+        "021120",
+        "021121",
+        "021122",
+        "021200",
+        "021201",
+        "021202",
+        "021210",
+        "021211",
+        "021212",
+        "021220",
+        "021221",
+        "021222",
+        "022000",
+        "022001",
+        "022002",
+        "022010",
+        "022011",
+        "022012",
+        "022020",
+        "022021",
+        "022022",
+        "022100",
+        "022101",
+        "022102",
+        "022110",
+        "022111",
+        "022112",
+        "022120",
+        "022121",
+        "022122",
+        "022200",
+        "022201",
+        "022202",
+        "022210",
+        "022211",
+        "022212",
+        "022220",
+        "022221",
+        "022222",
+        "100000",
+        "100001",
+        "100002",
+        "100010",
+        "100011",
+        "100012",
+        "100020",
+        "100021",
+        "100022",
+        "100100",
+        "100101",
+        "100102",
+        "100110",
+        "100111",
+        "100112",
+        "100120",
+        "100121",
+        "100122",
+        "100200",
+        "100201",
+        "100202",
+        "100210",
+        "100211",
+        "100212",
+        "100220",
+        "100221"
+      ]
+    },
+    {
+      "name": "Digits",
+      "level": 3,
+      "description": "",
+      "items": [
+        "100222",
+        "101000",
+        "101001",
+        "101002",
+        "101010",
+        "101011",
+        "101012",
+        "101020",
+        "101021",
+        "101022"
+      ]
+    },
+    {
+      "name": "Symbols",
+      "level": 3,
+      "description": "",
+      "items": [
+        "101100",
+        "101101",
+        "101102",
+        "101110",
+        "101111",
+        "101112",
+        "101120",
+        "101121",
+        "101122",
+        "101200",
+        "101201",
+        "101202",
+        "101210",
+        "101211",
+        "101212",
+        "101220",
+        "101221",
+        "101222",
+        "102000",
+        "102001",
+        "102002",
+        "102010",
+        "102011",
+        "102012",
+        "102020",
+        "102021",
+        "102022",
+        "102100",
+        "102101",
+        "102102",
+        "102110",
+        "102111",
+        "102112",
+        "102120",
+        "102121",
+        "102122",
+        "102200",
+        "102201",
+        "102202",
+        "102210",
+        "102211"
+      ]
+    },
+    {
+      "name": "Math Symbols",
+      "level": 3,
+      "description": "",
+      "items": [
+        "102212",
+        "102220",
+        "102221",
+        "102222",
+        "110000",
+        "110001",
+        "110002",
+        "110010",
+        "110011",
+        "110012",
+        "110020",
+        "110021",
+        "110022",
+        "110100",
+        "110101",
+        "110102",
+        "110110",
+        "110111",
+        "110112",
+        "110120",
+        "110121",
+        "110122",
+        "110200",
+        "110201",
+        "110202",
+        "110210",
+        "110211",
+        "110212",
+        "110220",
+        "110221",
+        "110222"
+      ]
+    }
+  ]
+}
