@@ -9,7 +9,7 @@ all: generated-files validate specification
 generated-files: $(SPEC_JSON)
 	$(PYTHON) scripts/generate.py
 
-validate:
+validate: generated-files
 	$(PYTHON) scripts/validate.py
 
 specification: generated-files
