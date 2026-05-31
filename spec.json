@@ -1788,6 +1788,176 @@
       "code": "110222",
       "name": "Much Greater-Than",
       "unicode": "U+226B"
+    },
+    "111000": {
+        "code": "111000",
+        "name": "Box Drawings Light Horizontal",
+        "unicode": "U+2500"
+    },
+    "111001": {
+        "code": "111001",
+        "name": "Box Drawings Light Vertical",
+        "unicode": "U+2502"
+    },
+    "111002": {
+        "code": "111002",
+        "name": "Box Drawings Light Down and Right",
+        "unicode": "U+250C"
+    },
+    "111010": {
+        "code": "111010",
+        "name": "Box Drawings Light Down and Left",
+        "unicode": "U+2510"
+    },
+    "111011": {
+        "code": "111011",
+        "name": "Box Drawings Light Up and Right",
+        "unicode": "U+2514"
+    },
+    "111012": {
+        "code": "111012",
+        "name": "Box Drawings Light Up and Left",
+        "unicode": "U+2518"
+    },
+    "111020": {
+        "code": "111020",
+        "name": "Box Drawings Light Vertical and Right",
+        "unicode": "U+251C"
+    },
+    "111021": {
+        "code": "111021",
+        "name": "Box Drawings Light Vertical and Left",
+        "unicode": "U+2524"
+    },
+    "111022": {
+        "code": "111022",
+        "name": "Box Drawings Light Down and Horizontal",
+        "unicode": "U+252C"
+    },
+    "111100": {
+        "code": "111100",
+        "name": "Box Drawings Light Up and Horizontal",
+        "unicode": "U+2534"
+    },
+    "111101": {
+        "code": "111101",
+        "name": "Box Drawings Light Vertical and Horizontal",
+        "unicode": "U+253C"
+    },
+    "112000": {
+        "code": "112000",
+        "name": "Box Drawings Double Horizontal",
+        "unicode": "U+2550"
+    },
+    "112001": {
+        "code": "112001",
+        "name": "Box Drawings Double Vertical",
+        "unicode": "U+2551"
+    },
+    "112002": {
+        "code": "112002",
+        "name": "Box Drawings Double Down and Right",
+        "unicode": "U+2554"
+    },
+    "112010": {
+        "code": "112010",
+        "name": "Box Drawings Double Down and Left",
+        "unicode": "U+2557"
+    },
+    "112011": {
+        "code": "112011",
+        "name": "Box Drawings Double Up and Right",
+        "unicode": "U+255A"
+    },
+    "112012": {
+        "code": "112012",
+        "name": "Box Drawings Double Up and Left",
+        "unicode": "U+255D"
+    },
+    "112020": {
+        "code": "112020",
+        "name": "Box Drawings Double Vertical and Right",
+        "unicode": "U+2560"
+    },
+    "112021": {
+        "code": "112021",
+        "name": "Box Drawings Double Vertical and Left",
+        "unicode": "U+2563"
+    },
+    "112022": {
+        "code": "112022",
+        "name": "Box Drawings Double Down and Horizontal",
+        "unicode": "U+2566"
+    },
+    "112100": {
+        "code": "112100",
+        "name": "Box Drawings Double Up and Horizontal",
+        "unicode": "U+2569"
+    },
+    "112101": {
+        "code": "112101",
+        "name": "Box Drawings Double Vertical and Horizontal",
+        "unicode": "U+256C"
+    },
+    "120000": {
+        "code": "120000",
+        "name": "Box Drawings Light Arc Down and Right",
+        "unicode": "U+256D"
+    },
+    "120001": {
+        "code": "120001",
+        "name": "Box Drawings Light Arc Down and Left",
+        "unicode": "U+256E"
+    },
+    "120002": {
+        "code": "120002",
+        "name": "Box Drawings Light Arc Up and Left",
+        "unicode": "U+256F"
+    },
+    "120010": {
+        "code": "120010",
+        "name": "Box Drawings Light Arc Up and Right",
+        "unicode": "U+2570"
+    },
+    "121000": {
+        "code": "121000",
+        "name": "Full Block",
+        "unicode": "U+2588"
+    },
+    "121001": {
+        "code": "121001",
+        "name": "Light Shade",
+        "unicode": "U+2591"
+    },
+    "121002": {
+        "code": "121002",
+        "name": "Medium Shade",
+        "unicode": "U+2592"
+    },
+    "121010": {
+        "code": "121010",
+        "name": "Dark Shade",
+        "unicode": "U+2593"
+    },
+    "121011": {
+        "code": "121011",
+        "name": "Upper Half Block",
+        "unicode": "U+2580"
+    },
+    "121012": {
+        "code": "121012",
+        "name": "Lower Half Block",
+        "unicode": "U+2584"
+    },
+    "121020": {
+        "code": "121020",
+        "name": "Left Half Block",
+        "unicode": "U+258C"
+    },
+    "121021": {
+        "code": "121021",
+        "name": "Right Half Block",
+        "unicode": "U+2590"
     }
   },
   "categories": [
@@ -2173,6 +2343,36 @@
         "110221",
         "110222"
       ]
+    },
+    {
+        "name": "Box drawing characters",
+        "level": 2,
+        "description": "A collection of graphical symbols used to design structured text-based user interfaces, borders, and grids.",
+        "items": []
+    },
+    {
+        "name": "Box Drawing (Light)",
+        "level": 3,
+        "description": "",
+        "items": ["111000", "111001", "111002", "111010", "111011", "111012", "111020", "111021", "111022", "111100", "111101"]
+    },
+    {
+        "name": "Box Drawing (Double)",
+        "level": 3,
+        "description": "",
+        "items": ["112000", "112001", "112002", "112010", "112011", "112012", "112020", "112021", "112022", "112100", "112101"]
+    },
+    {
+        "name": "Box Drawing (Rounded)",
+        "level": 3,
+        "description": "",
+        "items": ["120000", "120001", "120002", "120010"]
+    },
+    {
+        "name": "Blocks and Shades",
+        "level": 3,
+        "description": "Solid block elements and textured stipple patterns used for rendering UI backgrounds, progress bars, and simple text-mode shading effects.",
+        "items": ["121000", "121001", "121002", "121010", "121011", "121012", "121020", "121021"]
     }
   ]
 }

@@ -14,5 +14,5 @@ validate:
 
 specification: generated-files
 	$(MDBOOK) build
-dev:
+dev: generated-files
 	$(MDBOOK) serve
